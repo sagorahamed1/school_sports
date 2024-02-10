@@ -1,3 +1,3 @@
 class AppConstants{
-  static const String oTPVerifi = "OTP Verification";
+  static const String nosSports = "Nos Sports";
 }

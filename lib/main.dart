@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:school_sports/themes/themes.dart';
+import 'package:school_sports/views/screens/Nos%20Sports/nos_sports_screen.dart';
 import 'package:school_sports/views/screens/les_shark_lantides/les_shark_lantides.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: Themes().lightTheme,
-        home: const LesSharkLantidesScreen(),
+        home: const NosSportsScreen(),
       ),
     );
   }

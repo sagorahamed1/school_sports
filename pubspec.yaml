@@ -81,6 +81,9 @@ flutter:
     - family: Puritan
       fonts:
         - asset: assets/fonts/Puritan-Regular.ttf
+    - family: Margarine
+      fonts:
+        - asset: assets/fonts/Margarine-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
