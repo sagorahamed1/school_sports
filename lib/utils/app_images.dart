@@ -1,4 +1,6 @@
 class AppImages{
+
+  ///--------------------------Nos Sports screen -------------------------->
   static const String path = "assets/images";
   static const String NosSportsBg = "$path/NosSportsBg.png";
   static const String basketball = "$path/Basketball.png";
@@ -10,4 +12,14 @@ class AppImages{
   static const String futsal = "$path/Futsal.png";
   static const String natation = "$path/Natation.png";
   static const String handball = "$path/Handball.png";
+  static const String handball1 = "$path/Handball1.png";
+  static const String rugby = "$path/Rugby.png";
+  static const String street = "$path/Street.png";
+  static const String trennis = "$path/Tennis.png";
+  static const String volleyball = "$path/Volleyball.png";
+  static const String volleyball1 = "$path/Volleyball1.png";
+
+  ///--------------------------basket ball screen -------------------------->
+  static const String Basketball_screen_bg = "$path/Basketball_screen_bg.png";
+  static const String emmaLhomme = "$path/Emma.png";
 }
