@@ -39,6 +39,7 @@ class CustomShadowText extends StatelessWidget {
         textAlign: textAlign,
         text,
         maxLines: maxline,
+        textHeightBehavior: TextHeightBehavior(applyHeightToFirstAscent: true , applyHeightToLastDescent: false,leadingDistribution: TextLeadingDistribution.proportional),
         overflow: TextOverflow.ellipsis,
         style: TextStyle(
             fontSize: fontsize.sp,
@@ -48,19 +49,19 @@ class CustomShadowText extends StatelessWidget {
             shadows: const [
               Shadow( // bottomLeft
                   offset: Offset(-1.5, -1.5),
-                  color: Colors.black
+                  color: Color(0xFF584123)
               ),
               Shadow( // bottomRight
-                  offset: Offset(1.5, -1.5),
-                  color: Colors.black
+                  offset: Offset(1.50, -1.5),
+                  color: Color(0xFF584123)
               ),
               Shadow( // topRight
                   offset: Offset(1.5, 1.5),
-                  color: Colors.black
+                  color: Color(0xFF584123)
               ),
               Shadow( // topLeft
                   offset: Offset(-1.5, 1.5),
-                  color: Colors.black
+                  color: Color(0xFF584123)
               ),
             ]
         ),
