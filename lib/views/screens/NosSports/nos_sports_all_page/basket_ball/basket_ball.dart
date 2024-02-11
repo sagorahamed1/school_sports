@@ -112,7 +112,12 @@ class BasketBallScreen extends StatelessWidget {
 
                    Column(
                      children: [
-                       const Divider(color: AppColors.whiteFont,),
+
+                       Container(
+                         height: 1.5.h,
+                         width: 135.h,
+                         color: AppColors.whiteFont_BE8,
+                       ),
 
 
 
@@ -120,8 +125,8 @@ class BasketBallScreen extends StatelessWidget {
                          children: [
                            SvgPicture.asset(AppIcons.email_icon),
                            CustomShadowText(
-                             bottom: 4.h,
-                             top: 20.h,
+                             bottom: 10.h,
+                             top: 10.h,
                              maxline: 20,
                              text: ""
                                  "iesegpas".tr,
@@ -134,7 +139,11 @@ class BasketBallScreen extends StatelessWidget {
                        ),
 
 
-                       const Divider(color: AppColors.whiteFont,),
+                        Container(
+                         height: 1.5.h,
+                          width: 135.h,
+                          color: AppColors.whiteFont_BE8,
+                       ),
                      ],
                    )
                  ],
