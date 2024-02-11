@@ -13,78 +13,67 @@ class LesSharklantides extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      body: SingleChildScrollView(
-        child: Stack(
-          children: [
-            //==================================> Background Image <=================================>>
-            SizedBox(
-              width: double.infinity,
-              child: Image.asset(
-                AppImages.lesSharklantidesBg,
-                fit: BoxFit.cover,
+      body: Container(
+        width: double.infinity,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage(AppImages.logoscreenbg), fit: BoxFit.cover),
+        ),
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 42.w),
+          child: Column(
+            children: [
+              SizedBox(height: 75.h),
+              CustomText(
+                text: AppConstants.lesSharklantides,
+                fontName: "Margarine",
+                fontsize: 32.h,
+                color: AppColors.whiteFont,
               ),
-            ),
-            //==========================================================================================>>
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 42),
-              child: Column(
-                children: [
-                  Align(
-                    alignment: Alignment.center,
-                    child: CustomText(
-                      top: 74.h,
-                      text: AppConstants.lesSharklantides,
-                      fontName: "Margarine",
-                      fontsize: 32.sp,
-                      color: AppColors.whiteFont,
-                    ),
-                  ),
-                  SizedBox(height: 31.w),
-                  CustomCard(
-                    onpress: () {},
-                    title: AppConstants.quiSommes,
-                    textColor: Colors.white,
-                    bgColor: AppColors.nutLight,
-                  ),
-                  SizedBox(height: 27.w),
-                  CustomCard(
-                    onpress: () {},
-                    title: AppConstants.matchsEt,
-                    textColor: AppColors.nutLight,
-                    bgColor: AppColors.whiteLight,
-                  ),
-                  SizedBox(height: 28.w),
-                  CustomCard(
-                    onpress: () {},
-                    title: AppConstants.nosSportscAP,
-                    textColor: Colors.white,
-                    bgColor: AppColors.nutLight,
-                  ),
-                  SizedBox(height: 31.w),
-                  CustomCard(
-                    onpress: () {},
-                    title: AppConstants.lesSports,
-                    textColor: AppColors.nutLight,
-                    bgColor: AppColors.whiteLight,
-                  ),
-                  SizedBox(height: 31.w),
-                  CustomCard(
-                    onpress: () {},
-                    title: AppConstants.nosEvents,
-                    textColor: Colors.white,
-                    bgColor: AppColors.nutLight,
-                  ),
-                  SizedBox(height: 31.w),
-                  CustomCard(
-                    onpress: () {},
-                    title: AppConstants.notreBoutique,
-                    textColor: AppColors.nutLight,
-                    bgColor: AppColors.whiteLight,
-                  ),
-                ],
+              SizedBox(height: 31.h),
+              CustomCard(
+                onpress: () {},
+                title: AppConstants.quiSommes,
+                textColor: Colors.white,
+                bgColor: AppColors.nutLight,
               ),
-            ),
-          ],
+              SizedBox(height: 27.h),
+              CustomCard(
+                onpress: () {},
+                title: AppConstants.matchsEt,
+                textColor: AppColors.nutLight,
+                bgColor: AppColors.whiteLight,
+              ),
+              SizedBox(height: 28.h),
+              CustomCard(
+                onpress: () {},
+                title: AppConstants.nosSportscAP,
+                textColor: Colors.white,
+                bgColor: AppColors.nutLight,
+              ),
+              SizedBox(height: 31.h),
+              CustomCard(
+                onpress: () {},
+                title: AppConstants.lesSports,
+                textColor: AppColors.nutLight,
+                bgColor: AppColors.whiteLight,
+              ),
+              SizedBox(height: 31.h),
+              CustomCard(
+                onpress: () {},
+                title: AppConstants.nosEvents,
+                textColor: Colors.white,
+                bgColor: AppColors.nutLight,
+              ),
+              SizedBox(height: 31.h),
+              CustomCard(
+                onpress: () {},
+                title: AppConstants.notreBoutique,
+                textColor: AppColors.nutLight,
+                bgColor: AppColors.whiteLight,
+              ),
+            ],
+          ),
         ),
       ),
     );

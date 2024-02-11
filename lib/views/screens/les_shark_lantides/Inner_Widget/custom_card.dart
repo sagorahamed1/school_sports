@@ -21,14 +21,14 @@ class CustomCard extends StatelessWidget {
       onTap: onpress,
       child: Container(
         width: double.infinity,
-        height: 74.w,
+        height: 74.h,
         decoration: BoxDecoration(
             color: bgColor, borderRadius: BorderRadius.circular(8.h)),
         child: Center(
           child: CustomText(
             text: title,
             fontName: 'Margarine',
-            fontsize: 17.w,
+            fontsize: 17.h,
             fontWeight: FontWeight.w400,
             color: textColor,
           ),

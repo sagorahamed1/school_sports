@@ -18,6 +18,6 @@ class NosSportsController extends GetxController {
     {"sportsName": "Tennis", "sportsTitle": "Féminin", "sportsImage": AppImages.trennis},
     {"sportsName": "Tennis", "sportsTitle": "Masculin", "sportsImage": AppImages.trennis},
     {"sportsName": "Volleyball", "sportsTitle": "Féminin", "sportsImage": AppImages.volleyball},
-    {"sportsName": "Volleyball", "sportsTitle": "Masculin", "sportsImage": AppImages.volleyball1},
+    {"sportsName": "Volleyball", "sportsTitle": "Masculin", "sportsImage": AppImages.volleyball},
   ].obs;
 }
