@@ -9,4 +9,8 @@ class AppConstants{
   static const String notreBoutique = "NOTRE BOUTIQUE";
   static const String francais = "Français";
   static const String english = "English";
+  static const String logIn = "Log in";
+  static const String enterPass = "Enter your password";
+  static const String enterEmail = "Enter your email";
+  static const String sINSCRIRE = "S\’INSCRIRE";
 }

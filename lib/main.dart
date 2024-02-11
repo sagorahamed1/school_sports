@@ -8,6 +8,7 @@ import 'package:school_sports/views/screens/les_shark_lantides/les_shark_lantide
 import 'package:school_sports/views/screens/splashScreen/splash_screen.dart';
 
 import 'views/screens/languesScreen/langues_screen.dart';
+import 'views/screens/logInScreen/log_in_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'School Sports',
         theme: Themes().lightTheme,
-        home:  LanguesScreen(),
+        home:  LogInScreen(),
       ),
     );
   }
