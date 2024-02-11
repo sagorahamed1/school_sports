@@ -18,7 +18,12 @@ class AppImages{
   static const String street = "$path/Street.png";
   static const String trennis = "$path/Tennis.png";
   static const String volleyball = "$path/Volleyball.png";
-  static const String volleyball1 = "$path/Volleyball1.png";
+
+  //==============================================> Auth Screen <=======================================
+
+  static const String sharklogo = "$path/sharklogo.png";
+  static const String logoscreenbg = "$path/logoscreenbg.png";
+  static const String ux4logo = "$path/ux4logo.png";
 
   ///--------------------------basket ball screen -------------------------->
   static const String Basketball_screen_bg = "$path/Basketball_screen_bg.png";
