@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:school_sports/locale_string.dart';
 import 'package:school_sports/themes/themes.dart';
-import 'package:school_sports/views/screens/Nos%20Sports/nos_sports_screen.dart';
-import 'package:school_sports/views/screens/les_shark_lantides/les_shark_lantides.dart';
+import 'package:school_sports/views/screens/NosSports/nos_sports_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,12 +15,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: Size(373, 812),
+      designSize: const Size(373, 812),
       builder: (context, child) => GetMaterialApp(
+        translations: LocaleString(),
+        locale: const Locale("fn","FN"),
+        // locale: const Locale("en","US"),
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'School Sports',
         theme: Themes().lightTheme,
-        home: const NosSportsScreen(),
+        home:  NosSportsScreen(),
       ),
     );
   }
