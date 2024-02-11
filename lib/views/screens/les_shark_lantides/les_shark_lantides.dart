@@ -35,7 +35,7 @@ class LesSharklantides extends StatelessWidget {
                       top: 74.h,
                       text: AppConstants.lesSharklantides,
                       fontName: "Margarine",
-                      fontsize: 32.sp,
+                      fontsize: 32.h,
                       color: AppColors.whiteFont,
                     ),
                   ),

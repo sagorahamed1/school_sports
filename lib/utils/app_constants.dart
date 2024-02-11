@@ -7,4 +7,6 @@ class AppConstants{
   static const String lesSports = "LES SPORTOFS";
   static const String nosEvents = "NOS ÉVENTS";
   static const String notreBoutique = "NOTRE BOUTIQUE";
+  static const String francais = "Français";
+  static const String english = "English";
 }
