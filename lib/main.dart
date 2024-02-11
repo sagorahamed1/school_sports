@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'School Sports',
         theme: Themes().lightTheme,
-        home:  SinscrirePart2Screen(),
+        home:  LesSharklantides(),
       ),
     );
   }
