@@ -12,6 +12,7 @@ class AppImages{
   static const String futsal = "$path/Futsal.png";
   static const String natation = "$path/Natation.png";
   static const String handball = "$path/Handball.png";
+  static const String lesSharklantidesBg = "$path/LesSharklantidesBg.png";
   static const String handball1 = "$path/Handball1.png";
   static const String rugby = "$path/Rugby.png";
   static const String street = "$path/Street.png";
