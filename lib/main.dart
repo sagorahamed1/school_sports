@@ -10,6 +10,7 @@ import 'package:school_sports/views/screens/splashScreen/splash_screen.dart';
 import 'views/screens/inscriptionScreen/inscription_screen.dart';
 import 'views/screens/languesScreen/langues_screen.dart';
 import 'views/screens/logInScreen/log_in_screen.dart';
+import 'views/screens/sinscrirePart2Screen/sinscrire_part2_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'School Sports',
         theme: Themes().lightTheme,
-        home:  InscriptionScreen(),
+        home:  SinscrirePart2Screen(),
       ),
     );
   }

@@ -26,6 +26,7 @@ class AppImages{
   static const String ux4logo = "$path/ux4logo.png";
   static const String englishFlage = "$path/englishFlage.png";
   static const String francaisFlage = "$path/francaisFlage.png";
+  static const String sinscrirePart2bg = "$path/sinscrirePart2bg.png";
 
   ///--------------------------basket ball screen -------------------------->
   static const String Basketball_screen_bg = "$path/Basketball_screen_bg.png";
