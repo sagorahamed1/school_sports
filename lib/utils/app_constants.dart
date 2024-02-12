@@ -14,4 +14,13 @@ class AppConstants{
   static const String enterEmail = "Enter your email";
   static const String sINSCRIRE = "S\’INSCRIRE";
   static const String inscription = "inscription";
+  static const String lorganisation = "L’organisation";
+  static const String lePole = "Le Pôle Communication";
+  static const String lePoleEvenm = "Le Pôle Evenmentiel";
+  static const String respoSarah = "Respo : Sarah Gyarmathy";
+  static const String membresDiane = "Membres : Diane Leszek et Rafaël Bou";
+  static const String lePoleSports = "Le Pôle Sports";
+  static const String lePoleCompetition = "Le Pôle Compétition";
+  static const String lePoleSponsors = "Le Pôle Sponsors";
+  static const String leBureau = "Le Bureau";
 }
