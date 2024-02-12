@@ -31,4 +31,17 @@ class AppImages{
   ///--------------------------basket ball screen -------------------------->
   static const String Basketball_screen_bg = "$path/Basketball_screen_bg.png";
   static const String emmaLhomme = "$path/Emma.png";
+  static const String instragramIcon = "$path/instragramIcon.png";
+  static const String email_icon = "$path/email_icon.png";
+
+
+  ///--------------------------boxe screen----------------------------->
+  static const String boxe_screen_bgImage = "$path/boxe_screen_bgImage.png";
+
+
+  static const String cheerleadingScreen_bgImage = "$path/cheerleading_screen_bg_images.png";
+  static const String dansescreenbgImage = "$path/CheerleadingScreen_bgImage.png";
+  static const String fitnessscreen_bgimage = "$path/fitnessscreen_bgimage.png";
+  static const String footballscreen_bgImage = "$path/footballscreen_bgImage.png";
+  static const String nationscreen_bgImage = "$path/nationscreen_bgImage.png";
 }
