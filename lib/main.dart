@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       designSize: const Size(373, 812),
       builder: (context, child) => GetMaterialApp(
         translations: LocaleString(),
-        locale: const Locale("fn", "FN"),
+        locale: const Locale("fn","FN"),
         // locale: const Locale("en","US"),
         debugShowCheckedModeBanner: false,
         title: 'School Sports',
