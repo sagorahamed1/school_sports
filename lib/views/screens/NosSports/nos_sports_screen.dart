@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:school_sports/utils/app_colors.dart';
-import 'package:school_sports/utils/app_constants.dart';
 import 'package:school_sports/utils/app_images.dart';
 import 'package:school_sports/views/screens/NosSports/nos_sports_all_page/basket_ball/basket_ball.dart';
 import 'package:school_sports/views/widgets/custom_shadow_text.dart';
 import 'package:school_sports/views/widgets/custom_text.dart';
-
 import '../../../controller/nos_sports_controller.dart';
+
+
 
 class NosSportsScreen extends StatelessWidget {
    NosSportsScreen({super.key});
@@ -64,7 +64,7 @@ backgroundColor: Colors.black,
                             return GestureDetector(
                               onTap: (){
                                 print(index);
-                                Get.to(BasketBallScreen());
+                                Get.to(nosSports["page"]);
                               },
                               child: Container(
                                 width: 146,

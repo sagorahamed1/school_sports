@@ -6,10 +6,11 @@ class Themes {
 
       ///-----------------app bar theme------------------>
       appBarTheme: const AppBarTheme(
-          color: Colors.white,
+
+          backgroundColor : Colors.transparent,
           centerTitle: true,
-          elevation: 5,
-          shadowColor: Colors.green)
+          elevation: 0,
+      )
   );
 
 

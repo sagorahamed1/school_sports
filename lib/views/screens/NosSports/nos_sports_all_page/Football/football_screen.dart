@@ -3,14 +3,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:school_sports/utils/app_icons.dart';
+import 'package:school_sports/utils/dimensions.dart';
 import 'package:school_sports/views/widgets/custom_shadow_text.dart';
 
 import '../../../../../utils/app_colors.dart';
 import '../../../../../utils/app_images.dart';
 import '../../../../widgets/custom_text.dart';
 
-class BasketBallScreen extends StatelessWidget {
-  const BasketBallScreen({super.key});
+class FootballScreen extends StatelessWidget {
+  const FootballScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +32,8 @@ class BasketBallScreen extends StatelessWidget {
           ///------------------------------background image------------------------->
           Container(
             width: double.infinity,
-            child: Image.asset(AppImages.Basketball_screen_bg,fit: BoxFit.cover,),
+            height: double.infinity,
+            child: Image.asset(AppImages.footballscreen_bgImage,fit: BoxFit.cover,),
           ),
 
           ///---------------------all code------------------->
@@ -39,11 +41,9 @@ class BasketBallScreen extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 27,vertical: 20),
               child: Column(
-
                 children: [
 
-                   SizedBox(height: 35.h,),
-
+                  SizedBox(height: 35.h,),
 
                   // Align(
                   //     alignment: Alignment.centerLeft,
@@ -54,11 +54,9 @@ class BasketBallScreen extends StatelessWidget {
                   ///--------------------------text nos sports-------------------------->
                   Align(
                     alignment: Alignment.center,
-                    child: CustomShadowText(
+                    child: CustomText(
                       bottom: 15.h,
-
-                      // top: 74.h,
-                      text: "Basketball".tr,
+                      text: "Football",
                       fontName: "Margarine",
                       fontsize: 32.h,
                       color: AppColors.whiteFont,
@@ -71,8 +69,8 @@ class BasketBallScreen extends StatelessWidget {
                     height: 201.h,
                     width: mediaQuerywidth,
                     decoration: BoxDecoration(
-                      color: AppColors.blue_7B8,
-                      borderRadius: BorderRadius.circular(34.r)
+                        color: AppColors.blue_7B8,
+                        borderRadius: BorderRadius.circular(34.r)
                     ),
                     child: Center(
                       child: CustomText(
@@ -88,28 +86,31 @@ class BasketBallScreen extends StatelessWidget {
 
 
 
-                  ///--------------------------long Text----------------------------->
+                  ///--------------------------long text lequips----------------------------->
                   CustomShadowText(
                     top: 20.h,
                     maxline: 20,
-                    text: "logText".tr,
+                    text: "thefootballSportsTeam".tr,
                     fontName: "Margarine",
-                    fontsize: 16.h,
+                    fontsize: 13.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
 
 
-                  ///----------------------------Respo text----------------------------->
+
+
+                  SizedBox(height: 20.h,),
+                  ///----------------------------pespo text----------------------------->
                   Align(
                     alignment: Alignment.centerLeft,
                     child: CustomShadowText(
                       bottom: 7.h,
                       top: 20.h,
                       maxline: 20,
-                      text: "respo".tr,
+                      text: "Respo : Paul Théveneau",
                       fontName: "Margarine",
-                      fontsize: Dimensions.fontSizeDefault.h,
+                      fontsize: 16.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
                     ),
@@ -117,67 +118,66 @@ class BasketBallScreen extends StatelessWidget {
 
 
 
-               Row(
-                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                 children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
 
-                   ///-------------------profile image--------------------->
-                   Container(
-                     margin: const EdgeInsets.only(left: 30),
-                     width: 69.h,
-                     height: 76.h,
-                   child: Image.asset(AppImages.emmaLhomme,fit: BoxFit.cover,),
-                   ),
-
-
-
-                   Column(
-                     children: [
-                       // const Divider(color: AppColors.whiteFont,),
-
-                       Container(
-                         height: 1.h,
-                         width: 135.h,
-                         color: AppColors.whiteFont,
-                       ),
-
-
-                       Row(
-                         children: [
-
-                           ///--------------------------instragram text and icon------------------------------>
-                           Image.asset(AppImages.instragramIcon),
-
-
-                           CustomShadowText(
-                             left: 12.h,
-                             bottom: 10.h,
-                             top: 10.h,
-                             maxline: 20,
-                             text: "iesegpas".tr,
-                             fontName: "Margarine",
-                             fontsize:  Dimensions.fontSizeDefault,
-                             fontWeight: FontWeight.w700,
-                             color: AppColors.whiteFont,
-                           ),
-                         ],
-                       ),
-
-
-                       Container(
-                         height: 1.h,
-                         width: 135.h,
-                         color: AppColors.whiteFont,
-                       ),
-                     ],
-                   )
-                 ],
-               ),
+                      ///-------------------profile image--------------------->
+                      Container(
+                        margin: EdgeInsets.only(left: 32),
+                        width: 69.h,
+                        height: 76.h,
+                        child: Image.asset(AppImages.emmaLhomme,fit: BoxFit.cover,),
+                      ),
 
 
 
+                      Column(
+                        children: [
 
-                  const SizedBox(height: 7,),
+                          Container(
+                            height: 1.h,
+                            width: 135.w,
+                            color: AppColors.whiteFont,
+                          ),
+
+
+                          Row(
+                            children: [
+
+                              ///--------------------------instragram text and icon------------------------------>
+                              Image.asset(AppImages.instragramIcon),
+
+
+                              CustomText(
+                                left: 12.h,
+                                bottom: 10.h,
+                                top: 10.h,
+                                maxline: 20,
+                                text: "fitshark.ieseg",
+                                fontName: "Margarine",
+                                fontsize: Dimensions.fontSizeDefault,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.whiteFont,
+                              ),
+                            ],
+                          ),
+
+
+                          Container(
+                            height: 1.h,
+                            width: 135.w,
+                            color: AppColors.whiteFont,
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+
+
+
+
+                  SizedBox(height: 7,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -185,8 +185,8 @@ class BasketBallScreen extends StatelessWidget {
                       Image.asset(AppImages.email_icon),
                       const CustomText(
                         left: 7,
+                        text: "Paul.theveneau@ieseg.fr",
                         fontName: "Margarine",
-                        text: "Mathis.bages@ieseg.fr",
                         color: AppColors.whiteFont,
                         fontsize: Dimensions.fontSizeExtraSmall,
                       ),
@@ -197,12 +197,12 @@ class BasketBallScreen extends StatelessWidget {
                   ///-----------------------name text----------------------->
                   Row(
                     children: [
-                       Image.asset(AppImages.instragramIcon),
+                      Image.asset(AppImages.instragramIcon),
                       const CustomText(
                         left: 7,
-                        fontName: "Margarine",
-                        text: "Mathis.bages",
+                        text: "Paul_thev",
                         color: AppColors.whiteFont,
+                        fontName: "Margarine",
                         fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],

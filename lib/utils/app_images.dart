@@ -27,8 +27,41 @@ class AppImages{
   static const String englishFlage = "$path/englishFlage.png";
   static const String francaisFlage = "$path/francaisFlage.png";
   static const String sinscrirePart2bg = "$path/sinscrirePart2bg.png";
+  static const String lorganisationbg = "$path/lorganisationbg.png";
+  static const String lebureau1 = "$path/lebureau1.png";
+  static const String lebureau2 = "$path/lebureau2.png";
+  static const String lebureau3 = "$path/lebureau3.png";
+  static const String lebureau4 = "$path/lebureau4.png";
+  static const String lebureau5 = "$path/lebureau5.png";
+  static const String lebureau6 = "$path/lebureau6.png";
+  static const String lebureau7 = "$path/lebureau7.png";
+  static const String lebureau8 = "$path/lebureau8.png";
+  static const String lebureau9 = "$path/lebureau9.png";
+  static const String lebureau10 = "$path/lebureau10.png";
+  static const String lebureau11 = "$path/lebureau11.png";
+  static const String lebureau12 = "$path/lebureau12.png";
+  static const String lebureau13 = "$path/lebureau13.png";
+  static const String lebureau14 = "$path/lebureau14.png";
+  static const String lebureau15 = "$path/lebureau15.png";
+  static const String lebureau16 = "$path/lebureau16.png";
+  static const String lebureau17 = "$path/lebureau17.png";
+  static const String emillogo = "$path/emillogo.png";
+  static const String instalogo = "$path/instalogo.png";
 
   ///--------------------------basket ball screen -------------------------->
   static const String Basketball_screen_bg = "$path/Basketball_screen_bg.png";
   static const String emmaLhomme = "$path/Emma.png";
+  static const String instragramIcon = "$path/instragramIcon.png";
+  static const String email_icon = "$path/email_icon.png";
+
+
+  ///--------------------------boxe screen----------------------------->
+  static const String boxe_screen_bgImage = "$path/boxe_screen_bgImage.png";
+
+
+  static const String cheerleadingScreen_bgImage = "$path/cheerleading_screen_bg_images.png";
+  static const String dansescreenbgImage = "$path/CheerleadingScreen_bgImage.png";
+  static const String fitnessscreen_bgimage = "$path/fitnessscreen_bgimage.png";
+  static const String footballscreen_bgImage = "$path/footballscreen_bgImage.png";
+  static const String nationscreen_bgImage = "$path/nationscreen_bgImage.png";
 }
