@@ -27,6 +27,26 @@ class AppImages{
   static const String englishFlage = "$path/englishFlage.png";
   static const String francaisFlage = "$path/francaisFlage.png";
   static const String sinscrirePart2bg = "$path/sinscrirePart2bg.png";
+  static const String lorganisationbg = "$path/lorganisationbg.png";
+  static const String lebureau1 = "$path/lebureau1.png";
+  static const String lebureau2 = "$path/lebureau2.png";
+  static const String lebureau3 = "$path/lebureau3.png";
+  static const String lebureau4 = "$path/lebureau4.png";
+  static const String lebureau5 = "$path/lebureau5.png";
+  static const String lebureau6 = "$path/lebureau6.png";
+  static const String lebureau7 = "$path/lebureau7.png";
+  static const String lebureau8 = "$path/lebureau8.png";
+  static const String lebureau9 = "$path/lebureau9.png";
+  static const String lebureau10 = "$path/lebureau10.png";
+  static const String lebureau11 = "$path/lebureau11.png";
+  static const String lebureau12 = "$path/lebureau12.png";
+  static const String lebureau13 = "$path/lebureau13.png";
+  static const String lebureau14 = "$path/lebureau14.png";
+  static const String lebureau15 = "$path/lebureau15.png";
+  static const String lebureau16 = "$path/lebureau16.png";
+  static const String lebureau17 = "$path/lebureau17.png";
+  static const String emillogo = "$path/emillogo.png";
+  static const String instalogo = "$path/instalogo.png";
 
   ///--------------------------basket ball screen -------------------------->
   static const String Basketball_screen_bg = "$path/Basketball_screen_bg.png";
