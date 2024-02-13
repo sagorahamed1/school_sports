@@ -7,6 +7,7 @@ import 'package:school_sports/views/widgets/custom_shadow_text.dart';
 
 import '../../../../../utils/app_colors.dart';
 import '../../../../../utils/app_images.dart';
+import '../../../../../utils/dimensions.dart';
 import '../../../../widgets/custom_text.dart';
 
 class BasketBallScreen extends StatelessWidget {
