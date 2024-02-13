@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:school_sports/views/screens/lorganisationScreen/InnerWidget/squer_card.dart';
+import 'package:school_sports/views/screens/notreaventureScreen/InnerWidget/squer_card.dart';
 import '../../../../utils/app_constants.dart';
 import '../../../../utils/app_images.dart';
 import '../../../widgets/custom_text.dart';

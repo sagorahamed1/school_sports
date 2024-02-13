@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
+import 'package:school_sports/utils/app_icons.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_constants.dart';
 import '../../../utils/app_images.dart';
@@ -7,19 +10,33 @@ import '../../widgets/custom_text.dart';
 import 'InnerWidget/circle_card.dart';
 import 'InnerWidget/custom_alert_dialog.dart';
 
-class LorganisationScreen extends StatelessWidget {
-  const LorganisationScreen({super.key});
+class NotreaventureScreen extends StatelessWidget {
+  const NotreaventureScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBodyBehindAppBar: true,
       resizeToAvoidBottomInset: false,
       backgroundColor: Colors.black,
+      //======================================> AppBar Section <====================================================
+      appBar: AppBar(
+        toolbarHeight: 35,
+        leading: IconButton(
+            onPressed: () {
+              Get.back();
+            },
+            icon: SvgPicture.asset(
+              AppIcons.back_arrow,
+              color: AppColors.whiteFont,
+            )),
+      ),
+//==============================================================================================================
       body: Container(
         width: double.infinity,
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage(AppImages.lorganisationbg), fit: BoxFit.cover),
+              image: AssetImage(AppImages.notreaventurebg), fit: BoxFit.cover),
         ),
         child: SingleChildScrollView(
           child: Padding(
@@ -28,6 +45,50 @@ class LorganisationScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
+                SizedBox(height: 65.h),
+     //==============================================> Description Section <======================================================================
+                CustomText(
+                  text: AppConstants.notreAventure,
+                  fontName: "Margarine",
+                  fontsize: 28.h,
+                  fontWeight: FontWeight.w400,
+                  color: AppColors.whiteLight,
+                ),
+                SizedBox(height: 26.h),
+                SizedBox(width: 68.w, child: const Divider()),
+                SizedBox(height: 25.h),
+                CustomText(
+                  textAlign: TextAlign.start,
+                  text: AppConstants.dans,
+                  maxline: 4,
+                  fontName: "Puritan",
+                  fontsize: 13.h,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.whiteLight,
+                ),
+                SizedBox(height: 30.h),
+                CustomText(
+                  textAlign: TextAlign.start,
+                  text: AppConstants.dans1,
+                  maxline: 8,
+                  fontName: "Puritan",
+                  fontsize: 13.h,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.whiteLight,
+                ),
+                SizedBox(height: 30.h),
+                CustomText(
+                  textAlign: TextAlign.start,
+                  text: AppConstants.dans2,
+                  maxline: 5,
+                  fontName: "Puritan",
+                  fontsize: 13.h,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.whiteLight,
+                ),
+                SizedBox(height: 31.h),
+                SizedBox(width: 68.w, child: const Divider()),
+
                 SizedBox(height: 47.h),
                 CustomText(
                   text: AppConstants.lorganisation,
