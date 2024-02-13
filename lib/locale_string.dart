@@ -52,7 +52,7 @@ class LocaleString extends Translations{
 
       ///------------------------Basketball screen--------------------------->
       "courteVidoeDe" : "Courte vidéo de présentation",
-      "logText" : "L’équipe sportive de Basket “Iesegpas” à été créée en 2015 \n\n Les entraînements :\n. Lieu : Centre Sportif Koenig, Neuilly \n.  Jour . Vendredin\n. Horaires . 18h30 - 20h30 \n\n . Compétitions . \n WIUC\n. WESA\n . Teams\n Championnat Interuniversitaire\n Résultat :\n gg",
+      "logText" : "L’équipe sportive de Basket “Iesegpas” à été créée en 2015 \n\n Les entraînements :\n. Lieu : Centre Sportif Koenig, Neuilly \n.  Jour : Vendredin\n. Horaires . 18h30 - 20h30 \n\n  Compétitions :\n . WIUC\n. WESA\n . Teams\n. Championnat Interuniversitaire\n\n Résultat :\n gg",
       "respo" : "Respo : Emma Lhomme",
 
 
@@ -61,20 +61,20 @@ class LocaleString extends Translations{
       "Les" : "Les entraînements ainsi que les compétitions sont encore à définir ",
 
       ///------------------------cheerleading screen-------------------------------->
-      "theCheerleading" : "L’équipe sportive de Cheerleading “Cheerssquad” à \n été créée en 2016\n\nLes entraînements :\n.Lieu : Sporting Club de Neuilly, Ile de Puteaux \n.Jour : Jeudi\n.Horaires : 15h00 - 17h00/n/nCompétitions : \n WIUC\n.WESA\n.Teams\n\nRésultat : \nVice-champion du monde universitaire",
+      "theCheerleading" : "L’équipe sportive de Cheerleading “Cheerssquad” à \n été créée en 2016\n\nLes entraînements :\n. Lieu : Sporting Club de Neuilly, Ile de Puteaux \n. Jour : Jeudi\n. Horaires : 15h00 - 17h00/n/nCompétitions : \n. WIUC\n. WESA\n. Teams\n\nRésultat : \nVice-champion du monde universitaire",
 
       ///------------------------Danse screen------------------------------------->
       "Léquipesportive" : "L’équipe sportive de Danse “Ieseg Dance Studio” à \nété reformée en 2023\n\nLes entraînements :\n. Lieu : Centre sportif Koenig, Neuilly\n. Jour : Jeudi\n. Horaires : 16h00 - 18h00\n\nCompétitions : \n. WESA\n. Teams",
 
      ///-------------------------Fitness screen------------------------------->
-      "lequipesportivedeFitneeFitshark" : "L’équipe sportive de Fitness “FitShark” à été créée\n en 2022\n\nLes entraînements :\n. Lieu : Salle de\n . ieseg, neoness\n. Jour : Tous les \njoursHoraires : 6h00 - 23h00\n\nRésultats : \nhhhh",
+      "lequipesportivedeFitneeFitshark" : "L’équipe sportive de Fitness “FitShark” à été créée\n en 2022\n\nLes entraînements :\n. Lieu : Salle de ieseg, neoness\n. Jour : Tous les \njoursHoraires : 6h00 - 23h00\n\nRésultats : \nhhhh",
 
 
       ///----------------------------football screen----------------------------->
       "thefootballSportsTeam" : "L’équipe sportive de Football “Ieseg Paris FC” à été\n créée en 2018\n\nLes entraînements : \n. Lieu : Parc du pré saint jean, Saint Cloud\n. Jour : Mardi\n. Horaires : 18h00 - 19h30\n\nCompétitions : \n. Coupe de France\n . InterUniversitaire\nChampionnat InterUniversitaire. WIUC. WESA. TEAMS\n\nRésultats : \n. Champion du \n teams. 1/4 finale WIUC",
 
       ///-----------------------------------futsal screen-------------------------->
-      "lequipeSportivedefutsallFeminin" : "L’équipe sportive de Futsall Féminin “Barcelo’nana” \n à été créée en 2019\n \nLes entraînements : \n. Lieu : Parc du pré saint jean, Saint Cloud\n. Jour : Mardi\n. Horaires : 18h00 - 19h30\n \nCompétitions :. Urban League. WIUCRésultat :Troisième Urban League 2022",
+      "lequipeSportivedefutsallFeminin" : "L’équipe sportive de Futsall Féminin “Barcelo’nana” \n à été créée en 2019\n \nLes entraînements : \n. Lieu : Parc du pré saint jean, Saint Cloud\n. Jour : Mardi\n. Horaires : 18h00 - 19h30\n \nCompétitions :\n. Urban League\n. WIUC \n\n Résultat : \n Troisième Urban League 2022",
 
 
       ///------------------------------Natation screen----------------------------->

@@ -17,6 +17,13 @@ class CheerleadingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var mediaQuerywidth = MediaQuery.of(context).size.width;
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        toolbarHeight: 35,
+        leading: IconButton(onPressed: (){
+          Get.back();
+        }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
+      ),
 
       ///--------------------------------body-------------------------------->
       body: Stack(
@@ -36,29 +43,29 @@ class CheerleadingScreen extends StatelessWidget {
 
                 children: [
 
-                  SizedBox(height: 10.h,),
+                  SizedBox(height: 35.h,),
 
-
-                  Align(
-                      alignment: Alignment.centerLeft,
-                      child: IconButton(onPressed: (){
-                        Get.back();
-                      }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
+                  //
+                  // Align(
+                  //     alignment: Alignment.centerLeft,
+                  //     child: IconButton(onPressed: (){
+                  //       Get.back();
+                  //     }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
 
                   ///--------------------------text nos sports-------------------------->
                   Align(
                     alignment: Alignment.center,
-                    child: CustomText(
+                    child: CustomShadowText(
                       bottom: 15,
                       text: "Cheerleading",
                       fontName: "Margarine",
-                      fontsize: 36.h,
+                      fontsize: 32.h,
                       color: AppColors.whiteFont,
                     ),
                   ),
 
 
-
+                ///-------------------------------container---------------------->
                   Container(
                     height: 201.h,
                     width: mediaQuerywidth,
@@ -78,6 +85,7 @@ class CheerleadingScreen extends StatelessWidget {
                   ),
 
 
+                  SizedBox(height: 36,),
 
 
                   ///--------------------------long the Cheerleading Text----------------------------->
@@ -86,12 +94,13 @@ class CheerleadingScreen extends StatelessWidget {
                     maxline: 20,
                     text: "theCheerleading".tr,
                     fontName: "Margarine",
-                    fontsize: 16.h,
+                    fontsize: 14.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
 
 
+                  SizedBox(height: 15,),
 
                   ///----------------------------pespo text----------------------------->
                   Align(
@@ -102,7 +111,7 @@ class CheerleadingScreen extends StatelessWidget {
                       maxline: 20,
                       text: "Respo : Sarah Gyarmathy",
                       fontName: "Margarine",
-                      fontsize: 18.h,
+                      fontsize: 14.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
                     ),
@@ -115,7 +124,8 @@ class CheerleadingScreen extends StatelessWidget {
                     children: [
 
                       ///-------------------profile image--------------------->
-                      SizedBox(
+                      Container(
+                        margin: EdgeInsets.only(left: 35),
                         width: 69.h,
                         height: 76.h,
                         child: Image.asset(AppImages.emmaLhomme,fit: BoxFit.cover,),
@@ -177,8 +187,9 @@ class CheerleadingScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Sarah.gyarmathy@ieseg.fr",
+                        fontName: "Margarine",
                         color: AppColors.whiteFont,
-                        fontsize: Dimensions.fontSizeLarge,
+                        fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
@@ -191,15 +202,16 @@ class CheerleadingScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Sarah_grmt",
+                        fontName: "Margarine",
                         color: AppColors.whiteFont,
-                        fontsize: Dimensions.fontSizeLarge,
+                        fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
 
 
 
-                  const SizedBox(height: 17,),
+                  const SizedBox(height: 10,),
 
                 ],
               ),

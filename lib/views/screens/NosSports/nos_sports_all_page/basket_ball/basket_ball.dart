@@ -17,6 +17,13 @@ class BasketBallScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var mediaQuerywidth = MediaQuery.of(context).size.width;
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        toolbarHeight: 35,
+        leading: IconButton(onPressed: (){
+          Get.back();
+        }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
+      ),
 
       ///--------------------------------body-------------------------------->
       body: Stack(
@@ -36,25 +43,25 @@ class BasketBallScreen extends StatelessWidget {
 
                 children: [
 
-                   SizedBox(height: 5.h,),
+                   SizedBox(height: 35.h,),
 
 
-                  Align(
-                      alignment: Alignment.centerLeft,
-                      child: IconButton(onPressed: (){
-                        Get.back();
-                      }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
+                  // Align(
+                  //     alignment: Alignment.centerLeft,
+                  //     child: IconButton(onPressed: (){
+                  //       Get.back();
+                  //     }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
 
                   ///--------------------------text nos sports-------------------------->
                   Align(
                     alignment: Alignment.center,
-                    child: CustomText(
+                    child: CustomShadowText(
                       bottom: 15.h,
 
                       // top: 74.h,
                       text: "Basketball".tr,
                       fontName: "Margarine",
-                      fontsize: 36.h,
+                      fontsize: 32.h,
                       color: AppColors.whiteFont,
                     ),
                   ),
@@ -62,7 +69,7 @@ class BasketBallScreen extends StatelessWidget {
 
 
                   Container(
-                    height: 190.h,
+                    height: 201.h,
                     width: mediaQuerywidth,
                     decoration: BoxDecoration(
                       color: AppColors.blue_7B8,
@@ -103,7 +110,7 @@ class BasketBallScreen extends StatelessWidget {
                       maxline: 20,
                       text: "respo".tr,
                       fontName: "Margarine",
-                      fontsize: 18.h,
+                      fontsize: Dimensions.fontSizeDefault.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
                     ),
@@ -116,7 +123,8 @@ class BasketBallScreen extends StatelessWidget {
                  children: [
 
                    ///-------------------profile image--------------------->
-                   SizedBox(
+                   Container(
+                     margin: const EdgeInsets.only(left: 30),
                      width: 69.h,
                      height: 76.h,
                    child: Image.asset(AppImages.emmaLhomme,fit: BoxFit.cover,),
@@ -170,7 +178,7 @@ class BasketBallScreen extends StatelessWidget {
 
 
 
-                  SizedBox(height: 7,),
+                  const SizedBox(height: 7,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -178,9 +186,10 @@ class BasketBallScreen extends StatelessWidget {
                       Image.asset(AppImages.email_icon),
                       const CustomText(
                         left: 7,
+                        fontName: "Margarine",
                         text: "Mathis.bages@ieseg.fr",
                         color: AppColors.whiteFont,
-                        fontsize: Dimensions.fontSizeLarge,
+                        fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
@@ -192,9 +201,10 @@ class BasketBallScreen extends StatelessWidget {
                        Image.asset(AppImages.instragramIcon),
                       const CustomText(
                         left: 7,
+                        fontName: "Margarine",
                         text: "Mathis.bages",
                         color: AppColors.whiteFont,
-                        fontsize: Dimensions.fontSizeLarge,
+                        fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),

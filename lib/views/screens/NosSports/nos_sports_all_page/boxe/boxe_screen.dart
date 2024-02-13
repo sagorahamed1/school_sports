@@ -18,6 +18,14 @@ class BoxeScreen extends StatelessWidget {
     var mediaQuerywidth = MediaQuery.of(context).size.width;
     return Scaffold(
 
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        toolbarHeight: 35,
+        leading: IconButton(onPressed: (){
+          Get.back();
+        }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
+      ),
+
       ///--------------------------------body-------------------------------->
       body: Stack(
         children: [
@@ -36,25 +44,23 @@ class BoxeScreen extends StatelessWidget {
 
                 children: [
 
-                  SizedBox(height: 15.h,),
+                  SizedBox(height: 39.h,),
 
-
-                  Align(
-                      alignment: Alignment.centerLeft,
-                      child: IconButton(onPressed: (){
-                        Get.back();
-                      }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
+                  //
+                  // Align(
+                  //     alignment: Alignment.centerLeft,
+                  //     child: IconButton(onPressed: (){
+                  //       Get.back();
+                  //     }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
 
                   ///--------------------------text nos sports-------------------------->
                   Align(
                     alignment: Alignment.center,
-                    child: CustomText(
+                    child: CustomShadowText(
                       bottom: 15.h,
-
-                      // top: 74.h,
                       text: "Boxe",
                       fontName: "Margarine",
-                      fontsize: 36.h,
+                      fontsize: 32.h,
                       color: AppColors.whiteFont,
                     ),
                   ),
@@ -80,6 +86,7 @@ class BoxeScreen extends StatelessWidget {
                   ),
 
 
+                  const SizedBox(height: 86,),
 
 
                   ///--------------------------first lequips Text----------------------------->
@@ -88,7 +95,7 @@ class BoxeScreen extends StatelessWidget {
                     maxline: 20,
                     text: "Léquipe".tr,
                     fontName: "Margarine",
-                    fontsize: 16.h,
+                    fontsize: 14.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
@@ -101,7 +108,7 @@ class BoxeScreen extends StatelessWidget {
                     maxline: 20,
                     text: "Les".tr,
                     fontName: "Margarine",
-                    fontsize: 16.h,
+                    fontsize: 14.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
@@ -109,7 +116,7 @@ class BoxeScreen extends StatelessWidget {
 
 
 
-                  SizedBox(height: 130.h,),
+                  SizedBox(height: 110.h,),
                   ///----------------------------pespo text----------------------------->
                   Align(
                     alignment: Alignment.centerLeft,
@@ -119,7 +126,7 @@ class BoxeScreen extends StatelessWidget {
                       maxline: 20,
                       text: "Respo : Mathis Bages",
                       fontName: "Margarine",
-                      fontsize: 18.h,
+                      fontsize: Dimensions.fontSizeDefault.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
                     ),
@@ -132,7 +139,8 @@ class BoxeScreen extends StatelessWidget {
                     children: [
 
                       ///-------------------profile image--------------------->
-                      SizedBox(
+                      Container(
+                        margin: EdgeInsets.only(left: 25),
                         width: 69.h,
                         height: 76.h,
                         child: Image.asset(AppImages.emmaLhomme,fit: BoxFit.cover,),
@@ -194,8 +202,9 @@ class BoxeScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Emma.lhomme@ieseg.fr",
+                        fontName: "Margarine",
                         color: AppColors.whiteFont,
-                        fontsize: Dimensions.fontSizeLarge,
+                        fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
@@ -208,15 +217,14 @@ class BoxeScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Emma_.lm",
+                        fontName: "Margarine",
                         color: AppColors.whiteFont,
-                        fontsize: Dimensions.fontSizeLarge,
+                        fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
 
 
-
-                  const SizedBox(height: 17,),
 
                 ],
               ),

@@ -16,6 +16,14 @@ class DanseScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var mediaQuerywidth = MediaQuery.of(context).size.width;
     return Scaffold(
+      extendBodyBehindAppBar: true,
+      appBar: AppBar(
+        toolbarHeight: 35,
+        leading: IconButton(onPressed: (){
+          Get.back();
+        }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
+      ),
+
 
       ///--------------------------------body-------------------------------->
       body: Stack(
@@ -36,23 +44,23 @@ class DanseScreen extends StatelessWidget {
 
                 children: [
 
-                  SizedBox(height: 10.h,),
+                  SizedBox(height: 35.h,),
 
-
-                  Align(
-                      alignment: Alignment.centerLeft,
-                      child: IconButton(onPressed: (){
-                        Get.back();
-                      }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
+                  //
+                  // Align(
+                  //     alignment: Alignment.centerLeft,
+                  //     child: IconButton(onPressed: (){
+                  //       Get.back();
+                  //     }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
 
                   ///--------------------------text nos sports-------------------------->
                   Align(
                     alignment: Alignment.center,
-                    child: CustomText(
+                    child: CustomShadowText(
                       bottom: 15,
                       text: "Danse",
                       fontName: "Margarine",
-                      fontsize: 36.h,
+                      fontsize: 32.h,
                       color: AppColors.whiteFont,
                     ),
                   ),
@@ -77,6 +85,7 @@ class DanseScreen extends StatelessWidget {
                     ),
                   ),
 
+                  SizedBox(height: 32,),
 
 
 
@@ -86,7 +95,7 @@ class DanseScreen extends StatelessWidget {
                     maxline: 20,
                     text: "Léquipesportive".tr,
                     fontName: "Margarine",
-                    fontsize: 16.h,
+                    fontsize: 14.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
@@ -101,7 +110,7 @@ class DanseScreen extends StatelessWidget {
                     children: [
                       Container(
                         height: 1.h,
-                        width: 135.w,
+                        width: 150.w,
                         color: AppColors.whiteFont,
                       ),
 
@@ -131,7 +140,7 @@ class DanseScreen extends StatelessWidget {
 
                       Container(
                         height: 1.h,
-                        width: 135.w,
+                        width: 150.w,
                         color: AppColors.whiteFont,
                       ),
                     ],
@@ -146,7 +155,7 @@ class DanseScreen extends StatelessWidget {
                       maxline: 20,
                       text: "Respo : Victoire Allo",
                       fontName: "Margarine",
-                      fontsize: 18.h,
+                      fontsize: 14.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
                     ),
@@ -173,8 +182,9 @@ class DanseScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Victoire.allo@ieseg.fr",
+                        fontName: "Margarine",
                         color: AppColors.whiteFont,
-                        fontsize: Dimensions.fontSizeLarge,
+                        fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
@@ -188,8 +198,9 @@ class DanseScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Victoire.allo",
+                        fontName: "Margarine",
                         color: AppColors.whiteFont,
-                        fontsize: Dimensions.fontSizeLarge,
+                        fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),

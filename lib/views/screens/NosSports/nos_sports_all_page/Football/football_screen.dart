@@ -18,12 +18,12 @@ class FootballScreen extends StatelessWidget {
     var mediaQuerywidth = MediaQuery.of(context).size.width;
     return Scaffold(
       extendBodyBehindAppBar: true,
-      // appBar: AppBar(
-      //   leading: IconButton(onPressed: (){
-      //     Get.back();
-      //   }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
-      //   toolbarHeight: 44,
-      // ),
+      appBar: AppBar(
+        toolbarHeight: 35,
+        leading: IconButton(onPressed: (){
+          Get.back();
+        }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
+      ),
 
       ///--------------------------------body-------------------------------->
       body: Stack(
@@ -43,13 +43,13 @@ class FootballScreen extends StatelessWidget {
               child: Column(
                 children: [
 
-                  SizedBox(height: 49.h,),
+                  SizedBox(height: 35.h,),
 
-                  Align(
-                      alignment: Alignment.centerLeft,
-                      child: IconButton(onPressed: (){
-                        Get.back();
-                      }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
+                  // Align(
+                  //     alignment: Alignment.centerLeft,
+                  //     child: IconButton(onPressed: (){
+                  //       Get.back();
+                  //     }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
 
                   ///--------------------------text nos sports-------------------------->
                   Align(
@@ -58,7 +58,7 @@ class FootballScreen extends StatelessWidget {
                       bottom: 15.h,
                       text: "Football",
                       fontName: "Margarine",
-                      fontsize: 36.h,
+                      fontsize: 32.h,
                       color: AppColors.whiteFont,
                     ),
                   ),
@@ -92,7 +92,7 @@ class FootballScreen extends StatelessWidget {
                     maxline: 20,
                     text: "thefootballSportsTeam".tr,
                     fontName: "Margarine",
-                    fontsize: 16.h,
+                    fontsize: 13.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
@@ -110,7 +110,7 @@ class FootballScreen extends StatelessWidget {
                       maxline: 20,
                       text: "Respo : Paul Théveneau",
                       fontName: "Margarine",
-                      fontsize: 18.h,
+                      fontsize: 16.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
                     ),
@@ -123,7 +123,8 @@ class FootballScreen extends StatelessWidget {
                     children: [
 
                       ///-------------------profile image--------------------->
-                      SizedBox(
+                      Container(
+                        margin: EdgeInsets.only(left: 32),
                         width: 69.h,
                         height: 76.h,
                         child: Image.asset(AppImages.emmaLhomme,fit: BoxFit.cover,),
@@ -185,8 +186,9 @@ class FootballScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Paul.theveneau@ieseg.fr",
+                        fontName: "Margarine",
                         color: AppColors.whiteFont,
-                        fontsize: Dimensions.fontSizeLarge,
+                        fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
@@ -200,14 +202,15 @@ class FootballScreen extends StatelessWidget {
                         left: 7,
                         text: "Paul_thev",
                         color: AppColors.whiteFont,
-                        fontsize: Dimensions.fontSizeLarge,
+                        fontName: "Margarine",
+                        fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
 
 
 
-                  const SizedBox(height: 17,),
+                  const SizedBox(height: 10,),
 
                 ],
               ),
