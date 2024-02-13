@@ -45,6 +45,8 @@ class AppImages{
   static const String lebureau15 = "$path/lebureau15.png";
   static const String lebureau16 = "$path/lebureau16.png";
   static const String lebureau17 = "$path/lebureau17.png";
+  static const String emillogo = "$path/emillogo.png";
+  static const String instalogo = "$path/instalogo.png";
 
   ///--------------------------basket ball screen -------------------------->
   static const String Basketball_screen_bg = "$path/Basketball_screen_bg.png";

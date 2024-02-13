@@ -5,6 +5,7 @@ import '../../../utils/app_constants.dart';
 import '../../../utils/app_images.dart';
 import '../../widgets/custom_text.dart';
 import 'InnerWidget/circle_card.dart';
+import 'InnerWidget/custom_alert_dialog.dart';
 
 class LorganisationScreen extends StatelessWidget {
   const LorganisationScreen({super.key});
@@ -36,12 +37,30 @@ class LorganisationScreen extends StatelessWidget {
                   color: AppColors.whiteLight,
                 ),
                 SizedBox(height: 24.h),
-                CustomText(
-                  text: AppConstants.leBureau,
-                  fontName: "Puritan",
-                  fontsize: 16.h,
-                  fontWeight: FontWeight.w400,
-                  color: AppColors.whiteLight,
+
+//===============================================> Alert Dialog Section <=======================================
+
+                TextButton(
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => const AlertDialog(
+                              content: Padding(
+                                padding: EdgeInsets.all(2),
+                                child: CustomAlertDialog(),
+                              ),
+                            ));
+                  },
+
+//=====================================================================================================================================
+
+                  child: CustomText(
+                    text: AppConstants.leBureau,
+                    fontName: "Puritan",
+                    fontsize: 16.h,
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.whiteLight,
+                  ),
                 ),
                 SizedBox(height: 10.h),
                 Row(

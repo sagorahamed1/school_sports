@@ -23,4 +23,11 @@ class AppConstants{
   static const String lePoleCompetition = "Le Pôle Compétition";
   static const String lePoleSponsors = "Le Pôle Sponsors";
   static const String leBureau = "Le Bureau";
+  static const String presidenteAnae = "Présidente : Anaë Marco";
+  static const String anaeEmail = "Anae.marco@ieseg.fr";
+  static const String anaeInsta = "Anae.marco";
+  static const String vicePresidents = "Vice - Présidents : ";
+  static const String clarenceCoeffic = "Clarence Coeffic et Aurélien Majou";
+  static const String secretaireMaelys = "Secrétaire : Maëlys Benoit";
+  static const String TresorierClement = "Trésorier : Clément Bouquet";
 }
