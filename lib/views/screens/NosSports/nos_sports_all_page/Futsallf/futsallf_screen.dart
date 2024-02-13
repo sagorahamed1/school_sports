@@ -22,7 +22,10 @@ class FutsallFScreen extends StatelessWidget {
         toolbarHeight: 35,
         leading: IconButton(onPressed: (){
           Get.back();
-        }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
+        }, icon: Padding(
+          padding: const EdgeInsets.only(left: 17),
+          child: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,),
+        )),
       ),
       ///--------------------------------body-------------------------------->
       body: Stack(
@@ -43,12 +46,6 @@ class FutsallFScreen extends StatelessWidget {
                 children: [
 
                   SizedBox(height: 35.h,),
-
-                  // Align(
-                  //     alignment: Alignment.centerLeft,
-                  //     child: IconButton(onPressed: (){
-                  //       Get.back();
-                  //     }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
 
                   ///--------------------------text nos sports-------------------------->
                   Align(
@@ -74,15 +71,15 @@ class FutsallFScreen extends StatelessWidget {
                     child: Center(
                       child: CustomText(
                         text: "courteVidoeDe".tr,
-                        fontName: "Margarine",
-                        fontsize: 18.h,
+                        fontName: "Puritan",
+                        fontsize: 20.h,
                         fontWeight: FontWeight.w700,
                         color: AppColors.whiteFont,
                       ),
                     ),
                   ),
 
-                  SizedBox(height: 28,),
+                  const SizedBox(height: 28,),
 
 
 
@@ -92,25 +89,23 @@ class FutsallFScreen extends StatelessWidget {
                     top: 20.h,
                     maxline: 20,
                     text: "lequipeSportivedefutsallFeminin".tr,
-                    fontName: "Margarine",
+                    fontName: "Puritan",
                     fontsize: Dimensions.fontSizeDefault.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
 
 
-
-
                   SizedBox(height: 37.h,),
                   ///----------------------------pespo text----------------------------->
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: CustomShadowText(
+                    child: CustomText(
                       bottom: 7.h,
                       top: 20.h,
                       maxline: 20,
                       text: "Respo : Camille Rochefort",
-                      fontName: "Margarine",
+                      fontName: "Puritan",
                       fontsize: 14.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
@@ -125,7 +120,7 @@ class FutsallFScreen extends StatelessWidget {
 
                       ///-------------------profile image--------------------->
                       Container(
-                        margin: EdgeInsets.only(left: 32),
+                        margin: const EdgeInsets.only(left: 32),
                         width: 69.h,
                         height: 76.h,
                         child: Image.asset(AppImages.emmaLhomme,fit: BoxFit.cover,),
@@ -156,7 +151,7 @@ class FutsallFScreen extends StatelessWidget {
                                 top: 10.h,
                                 maxline: 20,
                                 text: "fc_barcelonada",
-                                fontName: "Margarine",
+                                fontName: "Puritan",
                                 fontsize: Dimensions.fontSizeDefault,
                                 fontWeight: FontWeight.w700,
                                 color: AppColors.whiteFont,
@@ -187,13 +182,13 @@ class FutsallFScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Camille.rochefort@ieseg.fr",
-                        fontName: "Margarine",
+                        fontName: "Puritan",
                         color: AppColors.whiteFont,
                         fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
-
+                  const SizedBox(height: 5,),
 
                   ///-----------------------name text----------------------->
                   Row(
@@ -202,7 +197,7 @@ class FutsallFScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Cam.rch",
-                        fontName: "Margarine",
+                        fontName: "Puritan",
                         color: AppColors.whiteFont,
                         fontsize: Dimensions.fontSizeExtraSmall,
                       ),

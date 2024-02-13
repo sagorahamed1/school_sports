@@ -21,7 +21,10 @@ class DanseScreen extends StatelessWidget {
         toolbarHeight: 35,
         leading: IconButton(onPressed: (){
           Get.back();
-        }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
+        }, icon: Padding(
+          padding: const EdgeInsets.only(left: 17),
+          child: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,),
+        )),
       ),
 
 
@@ -46,14 +49,7 @@ class DanseScreen extends StatelessWidget {
 
                   SizedBox(height: 35.h,),
 
-                  //
-                  // Align(
-                  //     alignment: Alignment.centerLeft,
-                  //     child: IconButton(onPressed: (){
-                  //       Get.back();
-                  //     }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
-
-                  ///--------------------------text nos sports-------------------------->
+                  ///--------------------------text danse-------------------------->
                   Align(
                     alignment: Alignment.center,
                     child: CustomShadowText(
@@ -77,33 +73,30 @@ class DanseScreen extends StatelessWidget {
                     child: Center(
                       child: CustomText(
                         text: "courteVidoeDe".tr,
-                        fontName: "Margarine",
-                        fontsize: 18.h,
+                        fontName: "Puritan",
+                        fontsize: 20.h,
                         fontWeight: FontWeight.w700,
                         color: AppColors.whiteFont,
                       ),
                     ),
                   ),
 
-                  SizedBox(height: 32,),
-
-
+                  const SizedBox(height: 20,),
 
                   ///--------------------------long the Cheerleading Text----------------------------->
                   CustomShadowText(
                     top: 20.h,
                     maxline: 20,
                     text: "Léquipesportive".tr,
-                    fontName: "Margarine",
-                    fontsize: 14.h,
+                    fontName: "Puritan",
+                    fontsize: 15.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
 
 
 
-                  SizedBox(height: 28,),
-
+                  const SizedBox(height: 28,),
                   ///------------------------------divider and and instragram icon--------------------------------------->
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -118,18 +111,17 @@ class DanseScreen extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-
                           ///--------------------------instragram text and icon------------------------------>
                           Image.asset(AppImages.instragramIcon),
 
 
-                          CustomShadowText(
+                          CustomText(
                             left: 12.h,
                             bottom: 10.h,
                             top: 10.h,
                             maxline: 20,
                             text: "ieseg_dancestudio",
-                            fontName: "Margarine",
+                            fontName: "Puritan",
                             fontsize: Dimensions.fontSizeDefault,
                             fontWeight: FontWeight.w700,
                             color: AppColors.whiteFont,
@@ -149,12 +141,12 @@ class DanseScreen extends StatelessWidget {
                   ///----------------------------pespo text----------------------------->
                   Align(
                     alignment: Alignment.center,
-                    child: CustomShadowText(
+                    child: CustomText(
                       bottom: 7.h,
                       top: 20.h,
                       maxline: 20,
                       text: "Respo : Victoire Allo",
-                      fontName: "Margarine",
+                      fontName: "Puritan",
                       fontsize: 14.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
@@ -170,26 +162,23 @@ class DanseScreen extends StatelessWidget {
                   ),
 
 
-
-
-                  SizedBox(height: 7,),
-
+                  const SizedBox(height: 7,),
                   ///-----------------------email text----------------------->
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset(AppImages.email_icon),
                       const CustomText(
                         left: 7,
                         text: "Victoire.allo@ieseg.fr",
-                        fontName: "Margarine",
+                        fontName: "Puritan",
                         color: AppColors.whiteFont,
                         fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
 
-
+                   const SizedBox(height: 5,),
                   ///-----------------------name text----------------------->
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -197,15 +186,14 @@ class DanseScreen extends StatelessWidget {
                       Image.asset(AppImages.instragramIcon),
                       const CustomText(
                         left: 7,
-                        text: "Victoire.allo",
-                        fontName: "Margarine",
+                        textAlign: TextAlign.start,
+                        text: "Victoire.allo              ",
+                        fontName: "Puritan",
                         color: AppColors.whiteFont,
                         fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
-
-
 
                   const SizedBox(height: 17,),
 

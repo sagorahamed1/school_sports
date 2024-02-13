@@ -22,7 +22,10 @@ class FootballScreen extends StatelessWidget {
         toolbarHeight: 35,
         leading: IconButton(onPressed: (){
           Get.back();
-        }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
+        }, icon: Padding(
+          padding: const EdgeInsets.only(left: 17),
+          child: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,),
+        )),
       ),
 
       ///--------------------------------body-------------------------------->
@@ -45,12 +48,6 @@ class FootballScreen extends StatelessWidget {
 
                   SizedBox(height: 35.h,),
 
-                  // Align(
-                  //     alignment: Alignment.centerLeft,
-                  //     child: IconButton(onPressed: (){
-                  //       Get.back();
-                  //     }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
-
                   ///--------------------------text nos sports-------------------------->
                   Align(
                     alignment: Alignment.center,
@@ -66,7 +63,7 @@ class FootballScreen extends StatelessWidget {
 
 
                   Container(
-                    height: 201.h,
+                    height: 185.h,
                     width: mediaQuerywidth,
                     decoration: BoxDecoration(
                         color: AppColors.blue_7B8,
@@ -75,8 +72,8 @@ class FootballScreen extends StatelessWidget {
                     child: Center(
                       child: CustomText(
                         text: "courteVidoeDe".tr,
-                        fontName: "Margarine",
-                        fontsize: 18.h,
+                        fontName: "Puritan",
+                        fontsize: 20.h,
                         fontWeight: FontWeight.w700,
                         color: AppColors.whiteFont,
                       ),
@@ -91,7 +88,7 @@ class FootballScreen extends StatelessWidget {
                     top: 20.h,
                     maxline: 20,
                     text: "thefootballSportsTeam".tr,
-                    fontName: "Margarine",
+                    fontName: "Puritan",
                     fontsize: 13.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
@@ -100,17 +97,17 @@ class FootballScreen extends StatelessWidget {
 
 
 
-                  SizedBox(height: 20.h,),
-                  ///----------------------------pespo text----------------------------->
+                  SizedBox(height: 4.h,),
+                  ///----------------------------Respo text----------------------------->
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: CustomShadowText(
+                    child: CustomText(
                       bottom: 7.h,
                       top: 20.h,
                       maxline: 20,
                       text: "Respo : Paul Théveneau",
-                      fontName: "Margarine",
-                      fontsize: 16.h,
+                      fontName: "Puritan",
+                      fontsize: 14.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
                     ),
@@ -124,7 +121,7 @@ class FootballScreen extends StatelessWidget {
 
                       ///-------------------profile image--------------------->
                       Container(
-                        margin: EdgeInsets.only(left: 32),
+                        margin: const EdgeInsets.only(left: 32),
                         width: 69.h,
                         height: 76.h,
                         child: Image.asset(AppImages.emmaLhomme,fit: BoxFit.cover,),
@@ -155,7 +152,7 @@ class FootballScreen extends StatelessWidget {
                                 top: 10.h,
                                 maxline: 20,
                                 text: "fitshark.ieseg",
-                                fontName: "Margarine",
+                                fontName: "Puritan",
                                 fontsize: Dimensions.fontSizeDefault,
                                 fontWeight: FontWeight.w700,
                                 color: AppColors.whiteFont,
@@ -174,10 +171,7 @@ class FootballScreen extends StatelessWidget {
                     ],
                   ),
 
-
-
-
-                  SizedBox(height: 7,),
+                  const SizedBox(height: 7,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -186,7 +180,7 @@ class FootballScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Paul.theveneau@ieseg.fr",
-                        fontName: "Margarine",
+                        fontName: "Puritan",
                         color: AppColors.whiteFont,
                         fontsize: Dimensions.fontSizeExtraSmall,
                       ),
@@ -194,6 +188,7 @@ class FootballScreen extends StatelessWidget {
                   ),
 
 
+                  const SizedBox(height: 5,),
                   ///-----------------------name text----------------------->
                   Row(
                     children: [
@@ -202,13 +197,11 @@ class FootballScreen extends StatelessWidget {
                         left: 7,
                         text: "Paul_thev",
                         color: AppColors.whiteFont,
-                        fontName: "Margarine",
+                        fontName: "Puritan",
                         fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
-
-
 
                   const SizedBox(height: 10,),
 

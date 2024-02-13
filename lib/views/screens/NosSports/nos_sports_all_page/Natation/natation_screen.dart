@@ -22,7 +22,10 @@ class NatationScreen extends StatelessWidget {
         toolbarHeight: 35,
         leading: IconButton(onPressed: (){
           Get.back();
-        }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
+        }, icon: Padding(
+          padding: const EdgeInsets.only(left: 17),
+          child: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,),
+        )),
       ),
 
       ///------------------------------------body-------------------------------->
@@ -44,12 +47,6 @@ class NatationScreen extends StatelessWidget {
                 children: [
 
                   SizedBox(height: 35.h,),
-
-                  // Align(
-                  //     alignment: Alignment.centerLeft,
-                  //     child: IconButton(onPressed: (){
-                  //       Get.back();
-                  //     }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
 
                   ///--------------------------text nos sports-------------------------->
                   Align(
@@ -75,8 +72,8 @@ class NatationScreen extends StatelessWidget {
                     child: Center(
                       child: CustomText(
                         text: "courteVidoeDe".tr,
-                        fontName: "Margarine",
-                        fontsize: 18.h,
+                        fontName: "Puritan",
+                        fontsize: 20.h,
                         fontWeight: FontWeight.w700,
                         color: AppColors.whiteFont,
                       ),
@@ -84,33 +81,31 @@ class NatationScreen extends StatelessWidget {
                   ),
 
 
-                  SizedBox(height: 49,),
+                  const SizedBox(height: 49,),
 
 
-                  ///--------------------------long text lequips----------------------------->
+                  ///--------------------------long text----------------------------->
                   CustomShadowText(
                     top: 20.h,
                     maxline: 20,
                     text: "theSwimmingSportsTeam".tr,
-                    fontName: "Margarine",
+                    fontName: "Puritan",
                     fontsize: 14.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
 
 
-
-
                   SizedBox(height: 74.h,),
-                  ///----------------------------pespo text----------------------------->
+                  ///----------------------------Respo text----------------------------->
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: CustomShadowText(
+                    child: CustomText(
                       bottom: 7.h,
                       top: 20.h,
                       maxline: 20,
                       text: "Respo : Diane Leszek",
-                      fontName: "Margarine",
+                      fontName: "Puritan",
                       fontsize: 14.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
@@ -156,7 +151,7 @@ class NatationScreen extends StatelessWidget {
                                 top: 10.h,
                                 maxline: 20,
                                 text: "les_brasseurs_",
-                                fontName: "Margarine",
+                                fontName: "Puritan",
                                 fontsize: Dimensions.fontSizeDefault,
                                 fontWeight: FontWeight.w700,
                                 color: AppColors.whiteFont,
@@ -178,7 +173,7 @@ class NatationScreen extends StatelessWidget {
 
 
 
-                  SizedBox(height: 7,),
+                  const SizedBox(height: 7,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -193,7 +188,7 @@ class NatationScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-
+                  const SizedBox(height: 5,),
 
                   ///-----------------------name text----------------------->
                   Row(

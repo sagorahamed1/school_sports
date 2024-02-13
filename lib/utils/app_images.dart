@@ -55,13 +55,16 @@ class AppImages{
   static const String email_icon = "$path/email_icon.png";
 
 
-  ///--------------------------boxe screen----------------------------->
+  ///--------------------------all screen bg image----------------------------->
   static const String boxe_screen_bgImage = "$path/boxe_screen_bgImage.png";
-
-
   static const String cheerleadingScreen_bgImage = "$path/cheerleading_screen_bg_images.png";
   static const String dansescreenbgImage = "$path/CheerleadingScreen_bgImage.png";
   static const String fitnessscreen_bgimage = "$path/fitnessscreen_bgimage.png";
   static const String footballscreen_bgImage = "$path/footballscreen_bgImage.png";
   static const String nationscreen_bgImage = "$path/nationscreen_bgImage.png";
+  static const String handball_screen_bgImage = "$path/handball_screen_bgImage.png";
+  static const String rugbyscreen_bgImage = "$path/rugbyscreen_bgImage.png";
+  static const String street_workout_bgImage = "$path/street_workout_bgImage.png";
+  static const String tennis_screen_bgImage = "$path/tennis_screen_bgImage.png";
+  static const String volleyball_screen_bgImage = "$path/volleyball_screen_bgImage.png";
 }

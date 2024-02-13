@@ -22,7 +22,10 @@ class FitnessScreen extends StatelessWidget {
         toolbarHeight: 35,
         leading: IconButton(onPressed: (){
           Get.back();
-        }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,)),
+        }, icon: Padding(
+          padding: const EdgeInsets.only(left: 17),
+          child: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,),
+        )),
       ),
 
       ///--------------------------------body-------------------------------->
@@ -44,12 +47,6 @@ class FitnessScreen extends StatelessWidget {
                 children: [
 
                   SizedBox(height: 35.h,),
-
-                  // Align(
-                  //     alignment: Alignment.centerLeft,
-                  //     child: IconButton(onPressed: (){
-                  //       Get.back();
-                  //     }, icon: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
 
                   ///--------------------------text nos sports-------------------------->
                   Align(
@@ -75,8 +72,8 @@ class FitnessScreen extends StatelessWidget {
                     child: Center(
                       child: CustomText(
                         text: "courteVidoeDe".tr,
-                        fontName: "Margarine",
-                        fontsize: 18.h,
+                        fontName: "Puritan",
+                        fontsize: 20.h,
                         fontWeight: FontWeight.w700,
                         color: AppColors.whiteFont,
                       ),
@@ -84,16 +81,16 @@ class FitnessScreen extends StatelessWidget {
                   ),
 
 
-                  SizedBox(height: 73,),
+                  const SizedBox(height: 55,),
 
 
-                  ///--------------------------long text lequips----------------------------->
+                  ///--------------------------long text----------------------------->
                   CustomShadowText(
                     top: 20.h,
                     maxline: 20,
                     text: "lequipesportivedeFitneeFitshark".tr,
-                    fontName: "Margarine",
-                    fontsize: 14.h,
+                    fontName: "Puritan",
+                    fontsize: 16.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
@@ -101,16 +98,16 @@ class FitnessScreen extends StatelessWidget {
 
 
 
-                  SizedBox(height: 45.h,),
-                  ///----------------------------pespo text----------------------------->
+                  SizedBox(height: 38.h,),
+                  ///----------------------------Respo text----------------------------->
                   Align(
                     alignment: Alignment.centerLeft,
-                    child: CustomShadowText(
+                    child: CustomText(
                       bottom: 7.h,
                       top: 20.h,
                       maxline: 20,
                       text: "Respo : Paul Théveneau",
-                      fontName: "Margarine",
+                      fontName: "Puritan",
                       fontsize: 14.h,
                       fontWeight: FontWeight.w400,
                       color: AppColors.whiteFont,
@@ -125,7 +122,7 @@ class FitnessScreen extends StatelessWidget {
 
                       ///-------------------profile image--------------------->
                       Container(
-                        margin: EdgeInsets.only(left: 30),
+                        margin: const EdgeInsets.only(left: 30),
                         width: 69.h,
                         height: 76.h,
                         child: Image.asset(AppImages.emmaLhomme,fit: BoxFit.cover,),
@@ -135,7 +132,6 @@ class FitnessScreen extends StatelessWidget {
 
                       Column(
                         children: [
-
                           Container(
                             height: 1.h,
                             width: 135.w,
@@ -149,14 +145,13 @@ class FitnessScreen extends StatelessWidget {
                               ///--------------------------instragram text and icon------------------------------>
                               Image.asset(AppImages.instragramIcon),
 
-
                               CustomText(
                                 left: 12.h,
                                 bottom: 10.h,
                                 top: 10.h,
                                 maxline: 20,
                                 text: "fitshark.ieseg",
-                                fontName: "Margarine",
+                                fontName: "Puritan",
                                 fontsize: Dimensions.fontSizeDefault,
                                 fontWeight: FontWeight.w700,
                                 color: AppColors.whiteFont,
@@ -178,7 +173,7 @@ class FitnessScreen extends StatelessWidget {
 
 
 
-                  SizedBox(height: 7,),
+                  const SizedBox(height: 7,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -187,12 +182,13 @@ class FitnessScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Paul.theveneau@ieseg.fr",
-                        fontName: "Margarine",
+                        fontName: "Puritan",
                         color: AppColors.whiteFont,
                         fontsize: Dimensions.fontSizeExtraSmall,
                       ),
                     ],
                   ),
+                  const SizedBox(height: 5,),
 
 
                   ///-----------------------name text----------------------->
@@ -202,7 +198,7 @@ class FitnessScreen extends StatelessWidget {
                       const CustomText(
                         left: 7,
                         text: "Paul_thev",
-                        fontName: "Margarine",
+                        fontName: "Puritan",
                         color: AppColors.whiteFont,
                         fontsize: Dimensions.fontSizeExtraSmall,
                       ),
