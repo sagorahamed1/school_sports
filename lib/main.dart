@@ -4,6 +4,14 @@ import 'package:get/get.dart';
 import 'package:school_sports/locale_string.dart';
 import 'package:school_sports/themes/themes.dart';
 import 'package:school_sports/views/screens/NosSports/nos_sports_screen.dart';
+import 'package:school_sports/views/screens/les_shark_lantides/les_shark_lantides.dart';
+import 'package:school_sports/views/screens/splashScreen/splash_screen.dart';
+import 'views/screens/inscriptionScreen/inscription_screen.dart';
+import 'views/screens/languesScreen/langues_screen.dart';
+import 'views/screens/logInScreen/log_in_screen.dart';
+import 'views/screens/lorganisationScreen/lorganisation_screen.dart';
+import 'views/screens/sinscrirePart2Screen/sinscrire_part2_screen.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +32,7 @@ class MyApp extends StatelessWidget {
         title: 'School Sports',
         theme: Themes().lightTheme,
         home: NosSportsScreen(),
+
       ),
     );
   }
