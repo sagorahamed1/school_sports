@@ -18,7 +18,13 @@ class AppConstants{
   static const String lePole = "Le Pôle Communication";
   static const String lePoleEvenm = "Le Pôle Evenmentiel";
   static const String respoSarah = "Respo : Sarah Gyarmathy";
+  static const String respoGaspard = "Respo : Gaspard Castaner";
+  static const String respoEmma = "Respo : Emma Lhomme";
+  static const String respoVictoire = "Respo : Victoire Allo";
   static const String membresDiane = "Membres : Diane Leszek et Rafaël Bou";
+  static const String membresJulie = "Membre : Julie Desfontaine";
+  static const String membresCamille = "Membre : Camille Rochefort";
+  static const String membresNoe = "Membre : Noé Barral";
   static const String lePoleSports = "Le Pôle Sports";
   static const String lePoleCompetition = "Le Pôle Compétition";
   static const String lePoleSponsors = "Le Pôle Sponsors";

@@ -9,6 +9,9 @@ import '../../../utils/app_images.dart';
 import '../../widgets/custom_text.dart';
 import 'InnerWidget/circle_card.dart';
 import 'InnerWidget/custom_alert_dialog.dart';
+import 'InnerWidget/le_evenmentiel_alert.dart';
+import 'InnerWidget/lo_communication_alert.dart';
+import 'InnerWidget/two_alert.dart';
 
 class NotreaventureScreen extends StatelessWidget {
   const NotreaventureScreen({super.key});
@@ -107,6 +110,7 @@ class NotreaventureScreen extends StatelessWidget {
                     showDialog(
                         context: context,
                         builder: (BuildContext context) => const AlertDialog(
+                              shape: Border(),
                               content: Padding(
                                 padding: EdgeInsets.all(2),
                                 child: CustomAlertDialog(),
@@ -163,14 +167,27 @@ class NotreaventureScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 34.h),
-                //=====================================> lePole Section <==========================
+                //=====================================> lePole Communication Section <==========================
 
-                CustomText(
-                  text: AppConstants.lePole,
-                  fontName: "Puritan",
-                  fontsize: 16.h,
-                  fontWeight: FontWeight.w400,
-                  color: AppColors.whiteLight,
+                TextButton(
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => const AlertDialog(
+                              shape: Border(),
+                              content: Padding(
+                                padding: EdgeInsets.all(2),
+                                child: LoCommunicationAlert(),
+                              ),
+                            ));
+                  },
+                  child: CustomText(
+                    text: AppConstants.lePole,
+                    fontName: "Puritan",
+                    fontsize: 16.h,
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.whiteLight,
+                  ),
                 ),
                 SizedBox(height: 13.h),
                 SizedBox(
@@ -203,12 +220,25 @@ class NotreaventureScreen extends StatelessWidget {
 
                 SizedBox(height: 34.h),
                 //=====================================> lePoleEvenm Section <==========================
-                CustomText(
-                  text: AppConstants.lePoleEvenm,
-                  fontName: "Puritan",
-                  fontsize: 16.h,
-                  fontWeight: FontWeight.w400,
-                  color: AppColors.whiteLight,
+                TextButton(
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => const AlertDialog(
+                              shape: Border(),
+                              content: Padding(
+                                padding: EdgeInsets.all(2),
+                                child: LeEvenmentielAlert(),
+                              ),
+                            ));
+                  },
+                  child: CustomText(
+                    text: AppConstants.lePoleEvenm,
+                    fontName: "Puritan",
+                    fontsize: 16.h,
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.whiteLight,
+                  ),
                 ),
                 SizedBox(height: 13.h),
                 SizedBox(
@@ -240,12 +270,33 @@ class NotreaventureScreen extends StatelessWidget {
                 ),
 
                 SizedBox(height: 34.h),
-                CustomText(
-                  text: AppConstants.lePoleSports,
-                  fontName: "Puritan",
-                  fontsize: 16.h,
-                  fontWeight: FontWeight.w400,
-                  color: AppColors.whiteLight,
+                //=====================================> lePoleSports Section <==========================
+
+                TextButton(
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                              shape: const Border(),
+                              content: Padding(
+                                padding: const EdgeInsets.all(2),
+                                child: TwoAlert(
+                                  toptitle: AppConstants.lePoleSports,
+                                  sectitle: AppConstants.respoGaspard,
+                                  lastitle: AppConstants.membresJulie,
+                                  image: const AssetImage(AppImages.lebureau12),
+                                  image2: const AssetImage(AppImages.blackImg),
+                                ),
+                              ),
+                            ));
+                  },
+                  child: CustomText(
+                    text: AppConstants.lePoleSports,
+                    fontName: "Puritan",
+                    fontsize: 16.h,
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.whiteLight,
+                  ),
                 ),
                 SizedBox(height: 13.h),
                 Row(
@@ -257,12 +308,34 @@ class NotreaventureScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 34.h),
-                CustomText(
-                  text: AppConstants.lePoleCompetition,
-                  fontName: "Puritan",
-                  fontsize: 16.h,
-                  fontWeight: FontWeight.w400,
-                  color: AppColors.whiteLight,
+                //=====================================> lePoleCompetition Section <==========================
+
+                TextButton(
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                              shape: const Border(),
+                              content: Padding(
+                                padding: const EdgeInsets.all(2),
+                                child: TwoAlert(
+                                  toptitle: AppConstants.lePoleCompetition,
+                                  sectitle: AppConstants.respoEmma,
+                                  lastitle: AppConstants.membresNoe,
+                                  image: const AssetImage(AppImages.lebureau14),
+                                  image2:
+                                      const AssetImage(AppImages.lebureau15),
+                                ),
+                              ),
+                            ));
+                  },
+                  child: CustomText(
+                    text: AppConstants.lePoleCompetition,
+                    fontName: "Puritan",
+                    fontsize: 16.h,
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.whiteLight,
+                  ),
                 ),
                 SizedBox(height: 13.h),
                 Row(
@@ -274,12 +347,34 @@ class NotreaventureScreen extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 34.h),
-                CustomText(
-                  text: AppConstants.lePoleSponsors,
-                  fontName: "Puritan",
-                  fontsize: 16.h,
-                  fontWeight: FontWeight.w400,
-                  color: AppColors.whiteLight,
+                //=====================================> lePoleCompetition Section <==========================
+
+                TextButton(
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                              shape: const Border(),
+                              content: Padding(
+                                padding: const EdgeInsets.all(2),
+                                child: TwoAlert(
+                                  toptitle: AppConstants.lePoleSponsors,
+                                  sectitle: AppConstants.respoVictoire,
+                                  lastitle: AppConstants.membresCamille,
+                                  image: const AssetImage(AppImages.lebureau16),
+                                  image2:
+                                      const AssetImage(AppImages.lebureau17),
+                                ),
+                              ),
+                            ));
+                  },
+                  child: CustomText(
+                    text: AppConstants.lePoleSponsors,
+                    fontName: "Puritan",
+                    fontsize: 16.h,
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.whiteLight,
+                  ),
                 ),
                 SizedBox(height: 13.h),
                 Row(
@@ -290,6 +385,7 @@ class NotreaventureScreen extends StatelessWidget {
                     const CircleCard(image: AssetImage(AppImages.lebureau17)),
                   ],
                 ),
+                SizedBox(height: 25.h),
               ],
             ),
           ),

@@ -5,8 +5,8 @@ import '../../../../utils/app_constants.dart';
 import '../../../../utils/app_images.dart';
 import '../../../widgets/custom_text.dart';
 
-class CustomAlertDialog extends StatelessWidget {
-  const CustomAlertDialog({
+class LeEvenmentielAlert extends StatelessWidget {
+  const LeEvenmentielAlert({
     super.key,
   });
 
@@ -19,7 +19,7 @@ class CustomAlertDialog extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             CustomText(
-              text: AppConstants.leBureau,
+              text: AppConstants.lePoleEvenm,
               fontName: "Margarine",
               fontsize: 20.h,
               fontWeight: FontWeight.w400,
@@ -27,7 +27,7 @@ class CustomAlertDialog extends StatelessWidget {
             ),
             SizedBox(height: 20.h),
             CustomText(
-              text: AppConstants.presidenteAnae,
+              text: AppConstants.respoSarah,
               fontName: "Puritan",
               fontsize: 11.h,
               fontWeight: FontWeight.w400,
@@ -37,8 +37,8 @@ class CustomAlertDialog extends StatelessWidget {
             Column(
               children: [
                 const SquerCard(
-                  image: AssetImage(AppImages.lebureau3),
-                  color: Color(0xffbcbabb),
+                  image: AssetImage(AppImages.lebureau10),
+                  color: Color(0xffcbc7c4),
                 ),
                 SizedBox(height: 3.h),
                 Row(
@@ -77,14 +77,7 @@ class CustomAlertDialog extends StatelessWidget {
             ),
             SizedBox(height: 17.h),
             CustomText(
-              text: AppConstants.vicePresidents,
-              fontName: "Puritan",
-              fontsize: 11.h,
-              fontWeight: FontWeight.w400,
-              color: Colors.black,
-            ),
-            CustomText(
-              text: AppConstants.clarenceCoeffic,
+              text: AppConstants.membresDiane,
               fontName: "Puritan",
               fontsize: 11.h,
               fontWeight: FontWeight.w400,
@@ -97,8 +90,8 @@ class CustomAlertDialog extends StatelessWidget {
                 Column(
                   children: [
                     const SquerCard(
-                      image: AssetImage(AppImages.lebureau2),
-                      color: Color(0xffc9c9ce),
+                      image: AssetImage(AppImages.lebureau9),
+                      color: Color(0xffbcbebe),
                     ),
                     SizedBox(height: 3.h),
                     Row(
@@ -138,116 +131,8 @@ class CustomAlertDialog extends StatelessWidget {
                 Column(
                   children: [
                     const SquerCard(
-                      image: AssetImage(AppImages.lebureau4),
-                      color: Color(0xffc5bcb7),
-                    ),
-                    SizedBox(height: 3.h),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset(AppImages.emillogo),
-                        SizedBox(width: 5.w),
-                        CustomText(
-                          text: AppConstants.anaeEmail,
-                          fontName: "Puritan",
-                          fontsize: 8.h,
-                          fontWeight: FontWeight.w400,
-                          color: Colors.black,
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 4.h),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset(AppImages.instalogo),
-                        SizedBox(width: 5.w),
-                        CustomText(
-                          textAlign: TextAlign.start,
-                          text: AppConstants.anaeEmail,
-                          fontName: "Puritan",
-                          fontsize: 8.h,
-                          fontWeight: FontWeight.w400,
-                          color: Colors.black,
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ],
-            ),
-            SizedBox(height: 17.h),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                CustomText(
-                  text: AppConstants.secretaireMaelys,
-                  fontName: "Puritan",
-                  fontsize: 8.h,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black,
-                ),
-                CustomText(
-                  text: AppConstants.TresorierClement,
-                  fontName: "Puritan",
-                  fontsize: 8.h,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black,
-                ),
-              ],
-            ),
-            SizedBox(height: 3.h),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Column(
-                  children: [
-                    const SquerCard(
-                      image: AssetImage(AppImages.lebureau1),
-                      color: Color(0xffcdcbcc),
-                    ),
-                    SizedBox(height: 3.h),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset(AppImages.emillogo),
-                        SizedBox(width: 5.w),
-                        CustomText(
-                          text: AppConstants.anaeEmail,
-                          fontName: "Puritan",
-                          fontsize: 8.h,
-                          fontWeight: FontWeight.w400,
-                          color: Colors.black,
-                        ),
-                      ],
-                    ),
-                    SizedBox(height: 4.h),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset(AppImages.instalogo),
-                        SizedBox(width: 5.w),
-                        CustomText(
-                          textAlign: TextAlign.start,
-                          text: AppConstants.anaeEmail,
-                          fontName: "Puritan",
-                          fontsize: 8.h,
-                          fontWeight: FontWeight.w400,
-                          color: Colors.black,
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-                Column(
-                  children: [
-                    const SquerCard(
-                      image: AssetImage(AppImages.lebureau5),
-                      color: Color(0xffc5bcb7),
+                      image: AssetImage(AppImages.lebureau11),
+                      color: Color(0xffbcbebe),
                     ),
                     SizedBox(height: 3.h),
                     Row(
