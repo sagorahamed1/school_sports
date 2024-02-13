@@ -32,21 +32,22 @@ class NotreaventureScreen extends StatelessWidget {
             )),
       ),
 //==============================================================================================================
-      body: Container(
-        width: double.infinity,
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage(AppImages.notreaventurebg), fit: BoxFit.cover),
-        ),
-        child: SingleChildScrollView(
+      body: SingleChildScrollView(
+        child: Container(
+          width: double.infinity,
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage(AppImages.notreaventurebg),
+                fit: BoxFit.cover),
+          ),
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 26.w),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                SizedBox(height: 65.h),
-     //==============================================> Description Section <======================================================================
+                SizedBox(height: 45.h),
+                //==============================================> Description Section <======================================================================
                 CustomText(
                   text: AppConstants.notreAventure,
                   fontName: "Margarine",
@@ -88,7 +89,7 @@ class NotreaventureScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 31.h),
                 SizedBox(width: 68.w, child: const Divider()),
-
+                //=======================================================================================================================================================
                 SizedBox(height: 47.h),
                 CustomText(
                   text: AppConstants.lorganisation,
@@ -99,7 +100,7 @@ class NotreaventureScreen extends StatelessWidget {
                 ),
                 SizedBox(height: 24.h),
 
-//===============================================> Alert Dialog Section <=======================================
+                //===============================================> Alert Dialog Section <=======================================
 
                 TextButton(
                   onPressed: () {
@@ -112,9 +113,7 @@ class NotreaventureScreen extends StatelessWidget {
                               ),
                             ));
                   },
-
-//=====================================================================================================================================
-
+                  //==================================================> leBureau  Section<=========================
                   child: CustomText(
                     text: AppConstants.leBureau,
                     fontName: "Puritan",
@@ -124,21 +123,48 @@ class NotreaventureScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 10.h),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const CircleCard(image: AssetImage(AppImages.lebureau1)),
-                    SizedBox(width: 9.w),
-                    const CircleCard(image: AssetImage(AppImages.lebureau2)),
-                    SizedBox(width: 9.w),
-                    const CircleCard(image: AssetImage(AppImages.lebureau3)),
-                    SizedBox(width: 9.w),
-                    const CircleCard(image: AssetImage(AppImages.lebureau4)),
-                    SizedBox(width: 9.w),
-                    const CircleCard(image: AssetImage(AppImages.lebureau5)),
-                  ],
+                SizedBox(
+                  height: 80.w,
+                  width: MediaQuery.of(context).size.width,
+                  child: Stack(
+                    children: [
+                      // SizedBox(height: 10.h),
+                      Positioned(
+                        left: 0.w,
+                        top: 0.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau1)),
+                      ),
+                      Positioned(
+                        left: 65.w,
+                        top: 20.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau2)),
+                      ),
+                      Positioned(
+                        left: 132.w,
+                        top: 10.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau3)),
+                      ),
+                      Positioned(
+                        right: 65.w,
+                        top: 20.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau4)),
+                      ),
+                      Positioned(
+                        right: 0.w,
+                        top: 0.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau5)),
+                      ),
+                    ],
+                  ),
                 ),
                 SizedBox(height: 34.h),
+                //=====================================> lePole Section <==========================
+
                 CustomText(
                   text: AppConstants.lePole,
                   fontName: "Puritan",
@@ -147,17 +173,36 @@ class NotreaventureScreen extends StatelessWidget {
                   color: AppColors.whiteLight,
                 ),
                 SizedBox(height: 13.h),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const CircleCard(image: AssetImage(AppImages.lebureau6)),
-                    SizedBox(width: 9.w),
-                    const CircleCard(image: AssetImage(AppImages.lebureau7)),
-                    SizedBox(width: 9.w),
-                    const CircleCard(image: AssetImage(AppImages.lebureau8)),
-                  ],
+                SizedBox(
+                  height: 80.w,
+                  width: MediaQuery.of(context).size.width,
+                  child: Stack(
+                    children: [
+                      // SizedBox(height: 10.h),
+                      Positioned(
+                        left: 60.w,
+                        top: 0.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau6)),
+                      ),
+                      Positioned(
+                        left: 132.w,
+                        top: 20.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau7)),
+                      ),
+                      Positioned(
+                        right: 60.w,
+                        top: 0.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau8)),
+                      ),
+                    ],
+                  ),
                 ),
+
                 SizedBox(height: 34.h),
+                //=====================================> lePoleEvenm Section <==========================
                 CustomText(
                   text: AppConstants.lePoleEvenm,
                   fontName: "Puritan",
@@ -166,16 +211,34 @@ class NotreaventureScreen extends StatelessWidget {
                   color: AppColors.whiteLight,
                 ),
                 SizedBox(height: 13.h),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const CircleCard(image: AssetImage(AppImages.lebureau9)),
-                    SizedBox(width: 9.w),
-                    const CircleCard(image: AssetImage(AppImages.lebureau10)),
-                    SizedBox(width: 9.w),
-                    const CircleCard(image: AssetImage(AppImages.lebureau11)),
-                  ],
+                SizedBox(
+                  height: 80.w,
+                  width: MediaQuery.of(context).size.width,
+                  child: Stack(
+                    children: [
+                      // SizedBox(height: 10.h),
+                      Positioned(
+                        left: 60.w,
+                        top: 0.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau9)),
+                      ),
+                      Positioned(
+                        left: 132.w,
+                        top: 20.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau10)),
+                      ),
+                      Positioned(
+                        right: 60.w,
+                        top: 0.h,
+                        child: const CircleCard(
+                            image: AssetImage(AppImages.lebureau11)),
+                      ),
+                    ],
+                  ),
                 ),
+
                 SizedBox(height: 34.h),
                 CustomText(
                   text: AppConstants.lePoleSports,
