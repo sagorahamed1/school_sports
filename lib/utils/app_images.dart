@@ -49,6 +49,10 @@ class AppImages{
   static const String instalogo = "$path/instalogo.png";
   static const String notreaventurebg = "$path/notreaventurebg.png";
   static const String blackImg = "$path/blackImg.png";
+  static const String matchsetResultatsScreenbg = "$path/matchsetResultatsScreenbg.png";
+  static const String ieslogo = "$path/ieslogo.png";
+  static const String esilogo = "$path/esilogo.png";
+  static const String rectanglGroup = "$path/rectanglGroup1.png";
 
   ///--------------------------basket ball screen -------------------------->
   static const String Basketball_screen_bg = "$path/Basketball_screen_bg.png";
