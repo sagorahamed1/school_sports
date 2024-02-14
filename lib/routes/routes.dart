@@ -9,6 +9,7 @@ import 'package:school_sports/views/screens/sinscrirePart2Screen/sinscrire_part2
 import 'package:school_sports/views/screens/splashScreen/splash_screen.dart';
 
 import '../views/screens/SportdumatchScreen/sportdumatch_screen.dart';
+import '../views/screens/la_boutique/la_boutique_screen.dart';
 import '../views/screens/les_sportofs/les_sportofs_screen.dart';
 import '../views/screens/matchsetResultatsScreen/matchset_resultats_screen.dart';
 import '../views/screens/nos_events/nos_events_screen.dart';
@@ -26,6 +27,7 @@ class AppRoutes {
   static const String lesSportofsScren = "/les_sportofs_screen.dart";
   static const String nosEventsScreen = "/nos_events_screen.dart";
   static const String sportdumatchScreen = "/sportdumatch_screen.dart";
+  static const String laBoutiqueScreen = "/la_boutique_screen.dart";
 
   static List<GetPage> routes = [
     GetPage(name: lesSharklantides, page: () => LesSharklantides()),
@@ -40,5 +42,6 @@ class AppRoutes {
     GetPage(name: lesSportofsScren, page: () => LesSportofsScren()),
     GetPage(name: nosEventsScreen, page: () => NosEventsScreen()),
     GetPage(name: sportdumatchScreen, page: () => SportdumatchScreen()),
+    GetPage(name: laBoutiqueScreen, page: () => LaBoutiqueScreen()),
   ];
 }
