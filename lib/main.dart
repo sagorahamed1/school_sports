@@ -10,7 +10,8 @@ import 'views/screens/inscriptionScreen/inscription_screen.dart';
 import 'views/screens/languesScreen/langues_screen.dart';
 import 'views/screens/les_sportofs/les_sportofs_screen.dart';
 import 'views/screens/logInScreen/log_in_screen.dart';
-import 'views/screens/lorganisationScreen/lorganisation_screen.dart';
+import 'views/screens/matchsetResultatsScreen/matchset_resultats_screen.dart';
+import 'views/screens/notreaventureScreen/notreaventure_screen.dart';
 import 'views/screens/sinscrirePart2Screen/sinscrire_part2_screen.dart';
 
 
@@ -32,7 +33,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'School Sports',
         theme: Themes().lightTheme,
+
         home: LesSportofsScren(),
+
 
       ),
     );
