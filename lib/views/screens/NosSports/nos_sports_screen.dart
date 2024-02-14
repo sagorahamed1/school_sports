@@ -17,21 +17,17 @@ class NosSportsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: true,
+
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         toolbarHeight: 60.h,
-        leading: IconButton(
-            onPressed: () {
-              Get.back();
-            },
-            icon: Padding(
-              padding: const EdgeInsets.only(left: 17),
-              child: SvgPicture.asset(
-                AppIcons.back_arrow,
-                color: AppColors.whiteFont,
-              ),
-            )),
+        leading: IconButton(onPressed: (){
+          Get.back();
+        }, icon: Container(
+            padding: const EdgeInsets.only(left: 17),
+            child: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
       ),
+
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -51,7 +47,7 @@ class NosSportsScreen extends StatelessWidget {
                 Align(
                   alignment: Alignment.center,
                   child: CustomText(
-                    top: 74.h,
+                    top: 45.h,
                     text: "NosSports".tr,
                     fontName: "Margarine",
                     fontsize: 36.h,
@@ -63,7 +59,7 @@ class NosSportsScreen extends StatelessWidget {
                   () => Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 37),
                     child: Container(
-                      height: 1320,
+                      height: 1500.h,
                       child: GridView.builder(
                         physics: const NeverScrollableScrollPhysics(),
                         itemCount: controller.nosSportsList.length,

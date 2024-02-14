@@ -20,7 +20,7 @@ class LaBoutiqueScreen extends StatelessWidget {
       backgroundColor: Colors.black12,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35.h,
+        toolbarHeight: 60.h,
         leading:
         IconButton(onPressed: (){
           Get.back();
@@ -48,14 +48,14 @@ class LaBoutiqueScreen extends StatelessWidget {
 
                 children: [
 
-                  SizedBox(height: 35.h,),
+                  SizedBox(height: 50.h,),
 
-                  ///--------------------------text nos sports-------------------------->
+                  ///--------------------------text la boutique-------------------------->
                   Align(
                     alignment: Alignment.center,
                     child: CustomText(
                       bottom: 15.h,
-                      text: "Nos Events",
+                      text: "La Boutique",
                       fontName: "Margarine",
                       fontsize: 28.h,
                       color: AppColors.whiteFont,
@@ -63,18 +63,45 @@ class LaBoutiqueScreen extends StatelessWidget {
                   ),
 
 
-                  ///-----------------------wiuc container----------------------->
+                  ///-----------------------prend ta licence container----------------------->
                   Container(
                     width: 320.w,
                     decoration: const BoxDecoration(
-
+                        image: DecorationImage(
+                            image: AssetImage(AppImages.prendtaicenceImage,),fit: BoxFit.fill
+                        )
                     ),
 
                     child: Center(
-                      child: CustomShadowText(
-                        top: 34.h,
-                        bottom: 34.h,
+                      child: CustomText(
+                        top: 74.h,
+                        bottom: 74.h,
                         text: "Prend ta licence",
+                        color: AppColors.whiteFont,
+                        fontsize: 32.h,
+                        fontWeight: FontWeight.w400,
+                        fontName: "Puritan",
+
+                      ),
+                    ),
+                  ),
+
+                  SizedBox(height: 121.h,),
+
+                  ///-----------------------Prend ta tenue container----------------------->
+                  Container(
+                    width: 320.w,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage(AppImages.prendtatenue_Image,),fit: BoxFit.fill
+                        )
+                    ),
+
+                    child: Center(
+                      child: CustomText(
+                        top: 74.h,
+                        bottom: 74.h,
+                        text: "Prend ta tenue",
                         color: AppColors.whiteFont,
                         fontsize: 32.h,
                         fontWeight: FontWeight.w400,
@@ -86,16 +113,6 @@ class LaBoutiqueScreen extends StatelessWidget {
 
 
 
-                  CustomText(
-                    top: 8.h,
-                    bottom: 21.h,
-                    text: "Billetterie Disponible ",
-                    color: AppColors.whiteFont,
-                    fontsize: Dimensions.fontSizeLarge.h,
-                    fontWeight: FontWeight.w700,
-                    fontName: "Puritan",
-
-                  ),
 
 
                 ],

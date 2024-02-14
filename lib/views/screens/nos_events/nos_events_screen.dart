@@ -107,6 +107,7 @@ class NosEventsScreen extends StatelessWidget {
                     decoration:  BoxDecoration(
                       borderRadius: BorderRadius.circular(45.r),
                       color: AppColors.black.withOpacity(0.5),
+                      border: Border.all(color: Colors.black)
                     ),
 
                     child: Center(
@@ -122,7 +123,7 @@ class NosEventsScreen extends StatelessWidget {
 
                           ),
 
-                          CustomShadowText(
+                          CustomText(
                             text: "Disponible dans 1jour, 2heures",
                             color: AppColors.whiteFont,
                             fontsize: 16.h,

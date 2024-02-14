@@ -85,4 +85,6 @@ class AppImages{
 
 
   static const String wIUC = "$path/wIUC.png";
+  static const String prendtaicenceImage = "$path/prendtaicenceImage.png";
+  static const String prendtatenue_Image = "$path/prendtatenue_Image.png";
 }
