@@ -52,6 +52,7 @@ class NotreaventureScreen extends StatelessWidget {
                 SizedBox(height: 45.h),
                 //==============================================> Description Section <======================================================================
                 CustomText(
+                  top: 16.h,
                   text: AppConstants.notreAventure,
                   fontName: "Margarine",
                   fontsize: 28.h,
