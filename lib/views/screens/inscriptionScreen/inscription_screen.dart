@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import '../../../routes/routes.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_constants.dart';
 import '../../../utils/app_images.dart';
@@ -37,7 +39,9 @@ class InscriptionScreen extends StatelessWidget {
               SizedBox(height: 157.h),
               const CustomTextField(title: AppConstants.enterEmail),
               SizedBox(height: 41.h),
-              CustomButton(title: AppConstants.sINSCRIRE, onpress: () {}),
+              CustomButton(title: AppConstants.sINSCRIRE, onpress: () {
+                Get.toNamed(AppRoutes.lesSharklantides);
+              }),
               const Spacer(),
               Image.asset(
                 AppImages.ux4logo,

@@ -43,4 +43,14 @@ class AppConstants{
   static const String matChs = "Matchs et Résultats";
   static const String duMois = "Du mois";
   static const String rugBy = "R u g b y";
+  static const String sportmatch = "Sport du match";
+  static const String dateHeure = "Date - Heure";
+  static const String ieuxSport = "Lieux - Sport";
+  static const String consultezMatch = "Consultez le match et résultat";
+  static const String laquaNews = "L’aqua news";
+  static const String petitResume = "Petit résumé du \nmatch";
+  static const String mettreUne = "Mettre une photo";
+  static const String lienDu = "Lien du live";
+  static const String lienMatch = "Lien du match";
+  static const String resultats = "Résultats";
 }

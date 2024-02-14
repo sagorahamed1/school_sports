@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import '../../../routes/routes.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_constants.dart';
 import '../../../utils/app_images.dart';
@@ -28,10 +30,15 @@ class LanguesScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Image.asset(
-                    width: 137.h,
-                    height: 121.h,
-                    AppImages.francaisFlage,
+                  GestureDetector(
+                    onTap: (){
+                      Get.toNamed(AppRoutes.logInScreen);
+                    },
+                    child: Image.asset(
+                      width: 137.h,
+                      height: 121.h,
+                      AppImages.francaisFlage,
+                    ),
                   ),
                   Image.asset(
                     width: 109.h,
