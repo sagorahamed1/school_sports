@@ -79,7 +79,9 @@ class LesSharklantides extends StatelessWidget {
               ),
               SizedBox(height: 25.h),
               CustomCard(
-                onpress: () {},
+                onpress: () {
+                  Get.toNamed(AppRoutes.laBoutiqueScreen);
+                },
                 title: AppConstants.notreBoutique,
                 textColor: AppColors.nutLight,
                 bgColor: AppColors.whiteLight,
