@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import '../../../routes/routes.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_constants.dart';
 import '../../../utils/app_images.dart';
@@ -39,7 +41,9 @@ class LogInScreen extends StatelessWidget {
               SizedBox(height: 22.h),
               const CustomTextField(title: AppConstants.enterPass),
               SizedBox(height: 22.h),
-              CustomButton(title: 'LOG IN', onpress: () {}),
+              CustomButton(title: 'LOG IN', onpress: () {
+                Get.toNamed(AppRoutes.inscriptionScreen);
+              }),
               SizedBox(height: 37.h),
               CustomText(
                 text: 'OU',
@@ -49,7 +53,9 @@ class LogInScreen extends StatelessWidget {
                 color: AppColors.whiteLight,
               ),
               SizedBox(height: 35.h),
-              CustomButton(title: AppConstants.sINSCRIRE, onpress: () {}),
+              CustomButton(title: AppConstants.sINSCRIRE, onpress: () {
+                Get.toNamed(AppRoutes.sinscrirePart2Screen);
+              }),
               const Spacer(),
               Image.asset(
                 AppImages.ux4logo,

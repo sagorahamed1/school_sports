@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:school_sports/utils/app_constants.dart';
 import 'package:school_sports/utils/app_icons.dart';
 import 'package:school_sports/views/widgets/custom_text.dart';
+import '../../../routes/routes.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_images.dart';
 
@@ -62,7 +63,11 @@ class MatchsetResultatsScreen extends StatelessWidget {
               SizedBox(height: 12.h),
               SizedBox(width: 68.w, child: const Divider()),
               SizedBox(height: 29.h),
-              Image.asset(AppImages.rectanglGroup)
+              GestureDetector(
+                  onTap: () {
+                    Get.toNamed(AppRoutes.sportdumatchScreen);
+                  },
+                  child: Image.asset(AppImages.rectanglGroup))
             ],
           ),
         ),
