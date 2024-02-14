@@ -19,7 +19,7 @@ class NatationScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Padding(
@@ -36,7 +36,7 @@ class NatationScreen extends StatelessWidget {
           Container(
             width: double.infinity,
             height: double.infinity,
-            child: Image.asset(AppImages.nationscreen_bgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.nationscreen_bgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -80,8 +80,7 @@ class NatationScreen extends StatelessWidget {
                     ),
                   ),
 
-
-                  const SizedBox(height: 49,),
+                   SizedBox(height: 49.h,),
 
 
                   ///--------------------------long text----------------------------->
@@ -140,10 +139,8 @@ class NatationScreen extends StatelessWidget {
 
                           Row(
                             children: [
-
                               ///--------------------------instragram text and icon------------------------------>
                               Image.asset(AppImages.instragramIcon),
-
 
                               CustomText(
                                 left: 12.h,
@@ -173,7 +170,7 @@ class NatationScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -188,7 +185,7 @@ class NatationScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 5,),
+                   SizedBox(height: 5.h,),
 
                   ///-----------------------name text----------------------->
                   Row(
@@ -204,10 +201,7 @@ class NatationScreen extends StatelessWidget {
                     ],
                   ),
 
-
-
-                  const SizedBox(height: 17,),
-
+                   SizedBox(height: 17.h,),
                 ],
               ),
             ),

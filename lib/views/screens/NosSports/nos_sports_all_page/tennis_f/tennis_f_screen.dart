@@ -19,7 +19,7 @@ class TennisFScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Padding(
@@ -36,7 +36,7 @@ class TennisFScreen extends StatelessWidget {
           Container(
             width: double.infinity,
             height: double.infinity,
-            child: Image.asset(AppImages.tennis_screen_bgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.tennis_screen_bgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -81,8 +81,7 @@ class TennisFScreen extends StatelessWidget {
                   ),
 
 
-                  const SizedBox(height: 47,),
-
+                   SizedBox(height: 47.h,),
 
                   ///--------------------------long text----------------------------->
                   CustomShadowText(
@@ -94,8 +93,6 @@ class TennisFScreen extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
-
-
 
 
                   SizedBox(height: 40.h,),
@@ -119,7 +116,6 @@ class TennisFScreen extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-
                       ///-------------------profile image--------------------->
                       Container(
                         margin: const EdgeInsets.only(left: 32),
@@ -132,20 +128,16 @@ class TennisFScreen extends StatelessWidget {
 
                       Column(
                         children: [
-
                           Container(
                             height: 1.h,
                             width: 135.w,
                             color: AppColors.whiteFont,
                           ),
 
-
                           Row(
                             children: [
-
                               ///--------------------------instragram text and icon------------------------------>
                               Image.asset(AppImages.instragramIcon),
-
 
                               CustomText(
                                 left: 12.h,
@@ -161,7 +153,6 @@ class TennisFScreen extends StatelessWidget {
                             ],
                           ),
 
-
                           Container(
                             height: 1.h,
                             width: 135.w,
@@ -173,9 +164,7 @@ class TennisFScreen extends StatelessWidget {
                   ),
 
 
-
-
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -190,7 +179,7 @@ class TennisFScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 5,),
+                   SizedBox(height: 5.h,),
 
 
                   ///-----------------------name text----------------------->
@@ -208,9 +197,7 @@ class TennisFScreen extends StatelessWidget {
                   ),
 
 
-
-                  const SizedBox(height: 17,),
-
+                   SizedBox(height: 17.h,),
                 ],
               ),
             ),

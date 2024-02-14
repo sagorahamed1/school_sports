@@ -18,7 +18,7 @@ class DanseScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 45.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Padding(
@@ -35,7 +35,7 @@ class DanseScreen extends StatelessWidget {
           ///------------------------------background image------------------------->
           Container(
             width: double.infinity,
-            child: Image.asset(AppImages.dansescreenbgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.dansescreenbgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -81,7 +81,7 @@ class DanseScreen extends StatelessWidget {
                     ),
                   ),
 
-                  const SizedBox(height: 20,),
+                   SizedBox(height: 20.h,),
 
                   ///--------------------------long the Cheerleading Text----------------------------->
                   CustomShadowText(
@@ -96,7 +96,7 @@ class DanseScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 28,),
+                   SizedBox(height: 28.h,),
                   ///------------------------------divider and and instragram icon--------------------------------------->
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -162,7 +162,7 @@ class DanseScreen extends StatelessWidget {
                   ),
 
 
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
                   ///-----------------------email text----------------------->
                   Row(
                      mainAxisAlignment: MainAxisAlignment.center,
@@ -178,7 +178,7 @@ class DanseScreen extends StatelessWidget {
                     ],
                   ),
 
-                   const SizedBox(height: 5,),
+                    SizedBox(height: 5.h,),
                   ///-----------------------name text----------------------->
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -195,7 +195,7 @@ class DanseScreen extends StatelessWidget {
                     ],
                   ),
 
-                  const SizedBox(height: 17,),
+                   SizedBox(height: 17.h,),
 
                 ],
               ),

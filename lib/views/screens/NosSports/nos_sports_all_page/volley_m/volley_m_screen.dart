@@ -17,7 +17,7 @@ class VolleyMScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(
             onPressed: () {
               Get.back();
@@ -40,7 +40,7 @@ class VolleyMScreen extends StatelessWidget {
             height: double.infinity,
             child: Image.asset(
               AppImages.volleyball_screen_bgImage,
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
             ),
           ),
 
@@ -86,8 +86,8 @@ class VolleyMScreen extends StatelessWidget {
                     ),
                   ),
 
-                  const SizedBox(
-                    height: 6,
+                   SizedBox(
+                    height: 6.h,
                   ),
 
                   ///--------------------------long text----------------------------->
@@ -178,8 +178,8 @@ class VolleyMScreen extends StatelessWidget {
                     ],
                   ),
 
-                  const SizedBox(
-                    height: 7,
+                   SizedBox(
+                    height: 7.h,
                   ),
 
                   ///----------------------- first email text----------------------->
@@ -216,7 +216,7 @@ class VolleyMScreen extends StatelessWidget {
                     ],
                   ),
 
-                  const SizedBox(height: 5,),
+                  SizedBox(height: 5.h,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -252,8 +252,8 @@ class VolleyMScreen extends StatelessWidget {
                     ],
                   ),
 
-                  const SizedBox(
-                    height: 10,
+                   SizedBox(
+                    height: 10.h,
                   ),
                 ],
               ),

@@ -19,7 +19,7 @@ class CheerleadingScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Container(
@@ -34,7 +34,7 @@ class CheerleadingScreen extends StatelessWidget {
           ///------------------------------background image------------------------->
           Container(
             width: double.infinity,
-            child: Image.asset(AppImages.cheerleadingScreen_bgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.cheerleadingScreen_bgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -80,7 +80,7 @@ class CheerleadingScreen extends StatelessWidget {
                   ),
 
 
-                  const SizedBox(height: 30,),
+                   SizedBox(height: 30.h,),
 
 
                   ///--------------------------long the Cheerleading Text----------------------------->
@@ -95,7 +95,7 @@ class CheerleadingScreen extends StatelessWidget {
                   ),
 
 
-                  const SizedBox(height: 15,),
+                   SizedBox(height: 15.h,),
 
                   ///----------------------------pespo text----------------------------->
                   Align(
@@ -120,7 +120,7 @@ class CheerleadingScreen extends StatelessWidget {
 
                       ///-------------------profile image--------------------->
                       Container(
-                        margin: EdgeInsets.only(left: 35),
+                        margin: const EdgeInsets.only(left: 35),
                         width: 69.h,
                         height: 76.h,
                         child: Image.asset(AppImages.emmaLhomme,fit: BoxFit.cover,),
@@ -189,7 +189,7 @@ class CheerleadingScreen extends StatelessWidget {
                     ],
                   ),
 
-                  const SizedBox(height: 5,),
+                   SizedBox(height: 5.h,),
 
                   ///-----------------------name text----------------------->
                   Row(
@@ -207,7 +207,7 @@ class CheerleadingScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 10,),
+                   SizedBox(height: 10.h,),
 
                 ],
               ),

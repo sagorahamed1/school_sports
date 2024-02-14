@@ -19,7 +19,7 @@ class RugbyMScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Padding(
@@ -36,7 +36,7 @@ class RugbyMScreen extends StatelessWidget {
           Container(
             width: double.infinity,
             height: double.infinity,
-            child: Image.asset(AppImages.rugbyscreen_bgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.rugbyscreen_bgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -81,7 +81,7 @@ class RugbyMScreen extends StatelessWidget {
                   ),
 
 
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
 
 
                   ///--------------------------long text----------------------------->
@@ -132,7 +132,6 @@ class RugbyMScreen extends StatelessWidget {
 
                       Column(
                         children: [
-
                           Container(
                             height: 1.h,
                             width: 135.w,
@@ -175,7 +174,7 @@ class RugbyMScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -190,7 +189,7 @@ class RugbyMScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 5,),
+                   SizedBox(height: 5.h,),
 
                   ///-----------------------name text----------------------->
                   Row(
@@ -208,7 +207,7 @@ class RugbyMScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 17,),
+                   SizedBox(height: 17.h,),
 
                 ],
               ),

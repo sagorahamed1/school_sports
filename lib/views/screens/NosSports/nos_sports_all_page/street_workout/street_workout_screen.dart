@@ -19,7 +19,7 @@ class StreetWorkOutScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Padding(
@@ -36,7 +36,7 @@ class StreetWorkOutScreen extends StatelessWidget {
           Container(
             width: double.infinity,
             height: double.infinity,
-            child: Image.asset(AppImages.street_workout_bgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.street_workout_bgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -45,7 +45,6 @@ class StreetWorkOutScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 27,vertical: 20),
               child: Column(
                 children: [
-
                   SizedBox(height: 35.h,),
 
                   ///--------------------------text nos sports-------------------------->
@@ -59,7 +58,6 @@ class StreetWorkOutScreen extends StatelessWidget {
                       color: AppColors.whiteFont,
                     ),
                   ),
-
 
 
                   Container(
@@ -81,9 +79,7 @@ class StreetWorkOutScreen extends StatelessWidget {
                   ),
 
 
-                  const SizedBox(height: 86,),
-
-
+                   SizedBox(height: 86.h,),
                   ///--------------------------long text----------------------------->
                   CustomShadowText(
                     top: 20.h,
@@ -94,8 +90,6 @@ class StreetWorkOutScreen extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
-
-
 
 
                   SizedBox(height: 94.h,),
@@ -146,7 +140,6 @@ class StreetWorkOutScreen extends StatelessWidget {
                               ///--------------------------instragram text and icon------------------------------>
                               Image.asset(AppImages.instragramIcon),
 
-
                               CustomText(
                                 left: 12.h,
                                 bottom: 10.h,
@@ -173,10 +166,7 @@ class StreetWorkOutScreen extends StatelessWidget {
                   ),
 
 
-
-
-                  const SizedBox(height: 7,),
-
+                   SizedBox(height: 7.h,),
                   ///-----------------------email text----------------------->
                   Row(
                     children: [
@@ -190,7 +180,7 @@ class StreetWorkOutScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 5,),
+                   SizedBox(height: 5.h,),
 
                   ///-----------------------name text----------------------->
                   Row(
@@ -206,10 +196,7 @@ class StreetWorkOutScreen extends StatelessWidget {
                     ],
                   ),
 
-
-
-                  const SizedBox(height: 17,),
-
+                   SizedBox(height: 17.h,),
                 ],
               ),
             ),

@@ -19,7 +19,7 @@ class VolleyFScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Padding(
@@ -36,7 +36,7 @@ class VolleyFScreen extends StatelessWidget {
           Container(
             width: double.infinity,
             height: double.infinity,
-            child: Image.asset(AppImages.volleyball_screen_bgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.volleyball_screen_bgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -80,9 +80,7 @@ class VolleyFScreen extends StatelessWidget {
                     ),
                   ),
 
-
-                  const SizedBox(height: 30,),
-
+                   SizedBox(height: 30.h,),
 
                   ///--------------------------long text----------------------------->
                   CustomShadowText(
@@ -175,7 +173,7 @@ class VolleyFScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -191,7 +189,7 @@ class VolleyFScreen extends StatelessWidget {
                     ],
                   ),
 
-                  const SizedBox(height: 5,),
+                   SizedBox(height: 5.h,),
 
                   ///-----------------------name text----------------------->
                   Row(
@@ -209,7 +207,7 @@ class VolleyFScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 17,),
+                  SizedBox(height: 17.h,),
 
                 ],
               ),

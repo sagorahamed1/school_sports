@@ -29,6 +29,7 @@ class LesSportofsScren extends StatelessWidget {
     AppImages.footballGame,
   ];
 
+
   @override
   Widget build(BuildContext context) {
     var width = MediaQuery.of(context).size.width;
@@ -36,12 +37,12 @@ class LesSportofsScren extends StatelessWidget {
       backgroundColor: Colors.black12,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading:
         IconButton(onPressed: (){
           Get.back();
         }, icon: Container(
-            padding: EdgeInsets.only(left: 17.h),
+            padding: const EdgeInsets.only(left: 17),
             child: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
       ),
 
@@ -53,7 +54,7 @@ class LesSportofsScren extends StatelessWidget {
           ///------------------------------background image------------------------->
           Container(
             width: double.infinity,
-            child: Image.asset(AppImages.LesSportofs_screen_bgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.LesSportofs_screen_bgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -103,7 +104,7 @@ class LesSportofsScren extends StatelessWidget {
 
 
                   Container(
-                    height: 520,
+                    height: 600,
                     child: GridView.builder(
                       itemCount: matchList.length,
                       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -112,12 +113,17 @@ class LesSportofsScren extends StatelessWidget {
                         mainAxisSpacing: 11,
                       ),
                       itemBuilder: (context, index) {
-                        return Image.asset("${matchList[index]}");
+                        return SizedBox(
+                          // height: 107,
+                          // width: 107,
+                          child: Image.asset("${matchList[index]}",fit: BoxFit.fill,width: 107.w,height: 107.w,),
+                        );
                       },
                     ),
                   ),
 
 
+                  SizedBox(height: 40.h,),
 
                   GestureDetector(
                     onTap: (){

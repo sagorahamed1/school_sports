@@ -19,7 +19,7 @@ class FitnessScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Padding(
@@ -36,7 +36,7 @@ class FitnessScreen extends StatelessWidget {
           Container(
             width: double.infinity,
             height: double.infinity,
-            child: Image.asset(AppImages.fitnessscreen_bgimage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.fitnessscreen_bgimage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -81,7 +81,7 @@ class FitnessScreen extends StatelessWidget {
                   ),
 
 
-                  const SizedBox(height: 55,),
+                   SizedBox(height: 55.h,),
 
 
                   ///--------------------------long text----------------------------->
@@ -173,7 +173,7 @@ class FitnessScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -188,7 +188,7 @@ class FitnessScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 5,),
+                   SizedBox(height: 5.h,),
 
 
                   ///-----------------------name text----------------------->
@@ -207,7 +207,7 @@ class FitnessScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 17,),
+                   SizedBox(height: 17.h,),
 
                 ],
               ),

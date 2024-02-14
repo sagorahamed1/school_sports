@@ -19,7 +19,7 @@ class FutsallFScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Padding(
@@ -35,7 +35,7 @@ class FutsallFScreen extends StatelessWidget {
           Container(
             width: double.infinity,
             height: double.infinity,
-            child: Image.asset(AppImages.footballscreen_bgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.footballscreen_bgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -79,8 +79,7 @@ class FutsallFScreen extends StatelessWidget {
                     ),
                   ),
 
-                  const SizedBox(height: 28,),
-
+                   SizedBox(height: 28.h,),
 
 
 
@@ -173,7 +172,7 @@ class FutsallFScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -188,7 +187,7 @@ class FutsallFScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 5,),
+                   SizedBox(height: 5.h,),
 
                   ///-----------------------name text----------------------->
                   Row(
@@ -206,7 +205,7 @@ class FutsallFScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 17,),
+                   SizedBox(height: 17.h,),
 
                 ],
               ),

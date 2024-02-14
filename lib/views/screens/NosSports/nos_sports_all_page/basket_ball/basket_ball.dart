@@ -18,12 +18,12 @@ class BasketBallScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 45.h,
         leading:
         IconButton(onPressed: (){
           Get.back();
         }, icon: Container(
-            padding: EdgeInsets.only(left: 17.h),
+            padding: const EdgeInsets.only(left: 17),
             child: SvgPicture.asset(AppIcons.back_arrow,color: AppColors.whiteFont,))),
       ),
 
@@ -34,7 +34,8 @@ class BasketBallScreen extends StatelessWidget {
           ///------------------------------background image------------------------->
           Container(
             width: double.infinity,
-            child: Image.asset(AppImages.Basketball_screen_bg,fit: BoxFit.cover,),
+            height: double.infinity.h,
+            child: Image.asset(AppImages.Basketball_screen_bg,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -131,7 +132,7 @@ class BasketBallScreen extends StatelessWidget {
 
                        Container(
                          height: 1.h,
-                         width: 135.h,
+                         width: 135.w,
                          color: AppColors.whiteFont,
                        ),
 
@@ -160,7 +161,7 @@ class BasketBallScreen extends StatelessWidget {
 
                        Container(
                          height: 1.h,
-                         width: 135.h,
+                         width: 135.w,
                          color: AppColors.whiteFont,
                        ),
                      ],
@@ -171,7 +172,7 @@ class BasketBallScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -187,14 +188,13 @@ class BasketBallScreen extends StatelessWidget {
                     ],
                   ),
 
-                   const SizedBox(height: 5,),
+                    SizedBox(height: 5.h,),
 
                   ///-----------------------name text----------------------->
                   Row(
                     children: [
                        Image.asset(AppImages.instragramIcon),
                       const CustomText(
-
                         left: 7,
                         fontName: "Puritan",
                         text: "Mathis.bages",
@@ -206,7 +206,7 @@ class BasketBallScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 10,),
+                   SizedBox(height: 10.h,),
 
                 ],
               ),

@@ -10,8 +10,8 @@ import '../../../utils/app_images.dart';
 import '../../widgets/custom_shadow_text.dart';
 import '../../widgets/custom_text.dart';
 
-class NosEventsScreen extends StatelessWidget {
-  NosEventsScreen({super.key});
+class LaBoutiqueScreen extends StatelessWidget {
+  LaBoutiqueScreen({super.key});
 
 
   @override
@@ -61,22 +61,20 @@ class NosEventsScreen extends StatelessWidget {
                       color: AppColors.whiteFont,
                     ),
                   ),
-                  
-                  
+
+
                   ///-----------------------wiuc container----------------------->
                   Container(
                     width: 320.w,
                     decoration: const BoxDecoration(
-                      image: DecorationImage(
-                        image: AssetImage(AppImages.wIUC,),fit: BoxFit.fill
-                      )
+
                     ),
 
                     child: Center(
                       child: CustomShadowText(
                         top: 34.h,
                         bottom: 34.h,
-                        text: "WIUC",
+                        text: "Prend ta licence",
                         color: AppColors.whiteFont,
                         fontsize: 32.h,
                         fontWeight: FontWeight.w400,
@@ -99,42 +97,6 @@ class NosEventsScreen extends StatelessWidget {
 
                   ),
 
-
-
-                  ///----------------------journee sportive container------------------->
-                  Container(
-                    width: 320.w,
-                    decoration:  BoxDecoration(
-                      borderRadius: BorderRadius.circular(45.r),
-                      color: AppColors.black.withOpacity(0.5),
-                    ),
-
-                    child: Center(
-                      child: Column(
-                        children: [
-                          CustomShadowText(
-                            top: 30.h,
-                            text: "Journée Sportive",
-                            color: AppColors.whiteFont,
-                            fontsize: 32.h,
-                            fontWeight: FontWeight.w400,
-                            fontName: "Puritan",
-
-                          ),
-
-                          CustomShadowText(
-                            text: "Disponible dans 1jour, 2heures",
-                            color: AppColors.whiteFont,
-                            fontsize: 16.h,
-                            bottom: 3.h,
-                            fontWeight: FontWeight.w400,
-                            fontName: "Puritan",
-
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
 
                 ],
               ),

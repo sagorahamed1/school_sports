@@ -20,7 +20,7 @@ class BoxeScreen extends StatelessWidget {
 
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Container(
@@ -35,7 +35,7 @@ class BoxeScreen extends StatelessWidget {
           ///------------------------------background image------------------------->
           Container(
             width: double.infinity,
-            child: Image.asset(AppImages.boxe_screen_bgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.boxe_screen_bgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -81,7 +81,7 @@ class BoxeScreen extends StatelessWidget {
                   ),
 
 
-                  const SizedBox(height: 86,),
+                   SizedBox(height: 86.h,),
 
 
                   ///--------------------------first lequips Text----------------------------->
@@ -188,7 +188,7 @@ class BoxeScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -203,7 +203,7 @@ class BoxeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 5,),
+                   SizedBox(height: 5.h,),
 
                   ///-----------------------name text----------------------->
                   Row(

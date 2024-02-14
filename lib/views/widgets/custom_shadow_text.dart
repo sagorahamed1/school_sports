@@ -41,10 +41,10 @@ class CustomShadowText extends StatelessWidget {
         maxLines: maxline,
         overflow: TextOverflow.ellipsis,
         style: TextStyle(
-            fontSize: fontsize.sp,
+            fontSize: fontsize,
             fontFamily: "$fontName",
             fontWeight: fontWeight,
-            height: 1.25,
+             height: 1.25,
             color: color,
             shadows: const [
               Shadow( // bottomLeft

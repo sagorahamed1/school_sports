@@ -6,8 +6,10 @@ import 'package:school_sports/themes/themes.dart';
 import 'package:school_sports/views/screens/la_journ%C3%A9e_sportive/la_journ%C3%A9e_sportive_screen.dart';
 import 'package:school_sports/views/screens/NosSports/nos_sports_screen.dart';
 import 'package:school_sports/views/screens/les_shark_lantides/les_shark_lantides.dart';
+import 'package:school_sports/views/screens/nos_events/nos_events_screen.dart';
 import 'package:school_sports/views/screens/splashScreen/splash_screen.dart';
 import 'views/screens/inscriptionScreen/inscription_screen.dart';
+import 'views/screens/la_boutique/la_boutique_screen.dart';
 import 'views/screens/languesScreen/langues_screen.dart';
 import 'views/screens/les_sportofs/les_sportofs_screen.dart';
 import 'views/screens/logInScreen/log_in_screen.dart';
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'School Sports',
         theme: Themes().lightTheme,
-        home: LaJourneeSportiveScreen(),
+        home: LaBoutiqueScreen(),
       ),
     );
   }

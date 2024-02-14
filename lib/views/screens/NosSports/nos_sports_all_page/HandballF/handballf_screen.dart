@@ -19,7 +19,7 @@ class HandballFScreen extends StatelessWidget {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        toolbarHeight: 35,
+        toolbarHeight: 35.h,
         leading: IconButton(onPressed: (){
           Get.back();
         }, icon: Padding(
@@ -36,7 +36,7 @@ class HandballFScreen extends StatelessWidget {
           Container(
             width: double.infinity,
             height: double.infinity,
-            child: Image.asset(AppImages.handball_screen_bgImage,fit: BoxFit.cover,),
+            child: Image.asset(AppImages.handball_screen_bgImage,fit: BoxFit.fill,),
           ),
 
           ///---------------------all code------------------->
@@ -45,7 +45,6 @@ class HandballFScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 27,vertical: 20),
               child: Column(
                 children: [
-
                   SizedBox(height: 38.h,),
 
                   ///--------------------------text nos sports-------------------------->
@@ -79,9 +78,7 @@ class HandballFScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-
-
-                  const SizedBox(height: 35,),
+                  SizedBox(height: 35.h,),
 
 
                   ///--------------------------long text----------------------------->
@@ -94,8 +91,6 @@ class HandballFScreen extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
-
-
 
 
                   SizedBox(height: 40.h,),
@@ -115,7 +110,6 @@ class HandballFScreen extends StatelessWidget {
                   ),
 
 
-
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
@@ -129,10 +123,8 @@ class HandballFScreen extends StatelessWidget {
                       ),
 
 
-
                       Column(
                         children: [
-
                           Container(
                             height: 1.h,
                             width: 149.w,
@@ -142,10 +134,8 @@ class HandballFScreen extends StatelessWidget {
 
                           Row(
                             children: [
-
                               ///--------------------------instragram text and icon------------------------------>
                               Image.asset(AppImages.instragramIcon),
-
 
                               CustomText(
                                 left: 12.h,
@@ -175,7 +165,7 @@ class HandballFScreen extends StatelessWidget {
 
 
 
-                  const SizedBox(height: 7,),
+                   SizedBox(height: 7.h,),
 
                   ///-----------------------email text----------------------->
                   Row(
@@ -190,7 +180,7 @@ class HandballFScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 5,),
+                   SizedBox(height: 5.h,),
 
                   ///-----------------------name text----------------------->
                   Row(
@@ -206,10 +196,7 @@ class HandballFScreen extends StatelessWidget {
                     ],
                   ),
 
-
-
-                  const SizedBox(height: 17,),
-
+                   SizedBox(height: 17.h,),
                 ],
               ),
             ),
