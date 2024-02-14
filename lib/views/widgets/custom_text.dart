@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../utils/app_colors.dart';
@@ -6,17 +5,17 @@ import '../../utils/app_colors.dart';
 class CustomText extends StatelessWidget {
   const CustomText(
       {super.key,
-        this.maxline,
-        this.fontName,
-        this.textAlign = TextAlign.center,
-        this.left = 0,
-        this.right = 0,
-        this.top = 0,
-        this.bottom = 0,
-        this.fontsize = 14,
-        this.fontWeight = FontWeight.w400,
-        this.color = Colors.white,
-        this.text = ""});
+      this.maxline,
+      this.fontName,
+      this.textAlign = TextAlign.center,
+      this.left = 0,
+      this.right = 0,
+      this.top = 0,
+      this.bottom = 0,
+      this.fontsize = 14,
+      this.fontWeight = FontWeight.w400,
+      this.color = Colors.white,
+      this.text = ""});
 
   final double left;
   final double right;

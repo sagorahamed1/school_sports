@@ -8,7 +8,8 @@ class SquerCard extends StatelessWidget {
   final Color color;
   const SquerCard({
     super.key,
-    required this.image, required this.color,
+    required this.image,
+    required this.color,
   });
 
   @override

@@ -18,7 +18,13 @@ class AppConstants{
   static const String lePole = "Le Pôle Communication";
   static const String lePoleEvenm = "Le Pôle Evenmentiel";
   static const String respoSarah = "Respo : Sarah Gyarmathy";
+  static const String respoGaspard = "Respo : Gaspard Castaner";
+  static const String respoEmma = "Respo : Emma Lhomme";
+  static const String respoVictoire = "Respo : Victoire Allo";
   static const String membresDiane = "Membres : Diane Leszek et Rafaël Bou";
+  static const String membresJulie = "Membre : Julie Desfontaine";
+  static const String membresCamille = "Membre : Camille Rochefort";
+  static const String membresNoe = "Membre : Noé Barral";
   static const String lePoleSports = "Le Pôle Sports";
   static const String lePoleCompetition = "Le Pôle Compétition";
   static const String lePoleSponsors = "Le Pôle Sponsors";
@@ -30,4 +36,11 @@ class AppConstants{
   static const String clarenceCoeffic = "Clarence Coeffic et Aurélien Majou";
   static const String secretaireMaelys = "Secrétaire : Maëlys Benoit";
   static const String TresorierClement = "Trésorier : Clément Bouquet";
+  static const String notreAventure = "Notre aventure";
+  static const String dans = "Dans l'Antiquité, Platon, philosophe terrien, rencontra Atlas, ancien roi de l'Atlantide. Cette cité prospère, dirigée par les descendants du dieu Poséidon, déclina dans la corruption, et fut engloutie par les flots suite au châtiment des dieux.";
+  static const String dans1 = "Certains terriens survivants du cataclysme, apprirent à s’adapter grâce au demi-dieu Atlas. Ainsi naquirent les Atlantes, Hommes-poissons qui règnent aujourd’hui sous les profondeurs de l’océan Atlantique. La famille royale atlante confia aux semi-terriens la mission de retrouver l'enfant perdu de l'Atlantide, légendaire passeur entre les mondes, destinée à établir la paix, l'harmonie terrianno-atlante, et à perpétuer le monde sportif.";
+  static const String dans2 = "Après des années de recherche, ils localisèrent la cité submergée où résidait leur guide. Révélant son rôle crucial, ils rassemblèrent les Atlantes disséminés parmi les terriens. Grâce à elle, ils concrétisèrent leurs projets sportifs, œuvrant pour la prospérité et le succès atlanto-terrien.";
+  static const String matChs = "Matchs et Résultats";
+  static const String duMois = "Du mois";
+  static const String rugBy = "R u g b y";
 }
