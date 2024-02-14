@@ -67,4 +67,15 @@ class AppImages{
   static const String street_workout_bgImage = "$path/street_workout_bgImage.png";
   static const String tennis_screen_bgImage = "$path/tennis_screen_bgImage.png";
   static const String volleyball_screen_bgImage = "$path/volleyball_screen_bgImage.png";
+  static const String LesSportofs_screen_bgImage = "$path/LesSportofs_screen_bgImage.png";
+  static const String nosEventsScreen_bgImage = "$path/nosEventsScreen_bgImage.png";
+
+
+
+  static const String resling = "$path/resling.png";
+  static const String gamePicture = "$path/gamePicture.png";
+  static const String footballGame = "$path/footballGame.png";
+
+
+  static const String wIUC = "$path/wIUC.png";
 }
