@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:school_sports/utils/app_colors.dart';
 import 'package:school_sports/utils/app_constants.dart';
 import 'package:school_sports/utils/app_images.dart';
 import 'package:school_sports/views/widgets/custom_text.dart';
+import '../../../routes/routes.dart';
 import 'Inner_Widget/custom_card.dart';
 
 class LesSharklantides extends StatelessWidget {
@@ -32,35 +34,45 @@ class LesSharklantides extends StatelessWidget {
               ),
               SizedBox(height: 25.h),
               CustomCard(
-                onpress: () {},
+                onpress: () {
+                  Get.toNamed(AppRoutes.notreaventureScreen);
+                },
                 title: AppConstants.quiSommes,
                 textColor: Colors.white,
                 bgColor: AppColors.nutLight,
               ),
               SizedBox(height: 25.h),
               CustomCard(
-                onpress: () {},
+                onpress: () {
+                  Get.toNamed(AppRoutes.matchsetResultatsScreen);
+                },
                 title: AppConstants.matchsEt,
                 textColor: AppColors.nutLight,
                 bgColor: AppColors.whiteLight,
               ),
               SizedBox(height: 25.h),
               CustomCard(
-                onpress: () {},
+                onpress: () {
+                  Get.toNamed(AppRoutes.nosSportsScreen);
+                },
                 title: AppConstants.nosSportscAP,
                 textColor: Colors.white,
                 bgColor: AppColors.nutLight,
               ),
               SizedBox(height: 25.h),
               CustomCard(
-                onpress: () {},
+                onpress: () {
+                  Get.toNamed(AppRoutes.lesSportofsScren);
+                },
                 title: AppConstants.lesSports,
                 textColor: AppColors.nutLight,
                 bgColor: AppColors.whiteLight,
               ),
               SizedBox(height: 25.h),
               CustomCard(
-                onpress: () {},
+                onpress: () {
+                  Get.toNamed(AppRoutes.nosEventsScreen);
+                },
                 title: AppConstants.nosEvents,
                 textColor: Colors.white,
                 bgColor: AppColors.nutLight,

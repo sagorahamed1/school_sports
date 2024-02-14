@@ -53,6 +53,9 @@ class AppImages{
   static const String ieslogo = "$path/ieslogo.png";
   static const String esilogo = "$path/esilogo.png";
   static const String rectanglGroup = "$path/rectanglGroup1.png";
+  static const String rectangleBg1 = "$path/rectangleBg1.png";
+  static const String rectangleBg2 = "$path/rectangleBg2.png";
+  static const String mettrePhoto = "$path/mettrePhoto.png";
 
   ///--------------------------basket ball screen -------------------------->
   static const String Basketball_screen_bg = "$path/Basketball_screen_bg.png";
