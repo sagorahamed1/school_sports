@@ -50,4 +50,7 @@ class AppConstants{
   static const String laquaNews = "L’aqua news";
   static const String petitResume = "Petit résumé du \nmatch";
   static const String mettreUne = "Mettre une photo";
+  static const String lienDu = "Lien du live";
+  static const String lienMatch = "Lien du match";
+  static const String resultats = "Résultats";
 }

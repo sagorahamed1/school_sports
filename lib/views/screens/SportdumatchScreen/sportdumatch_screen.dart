@@ -7,6 +7,7 @@ import 'package:school_sports/utils/app_icons.dart';
 import 'package:school_sports/views/widgets/custom_text.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_images.dart';
+import 'InnerWidget/result_alert.dart';
 
 class SportdumatchScreen extends StatelessWidget {
   const SportdumatchScreen({super.key});
@@ -99,13 +100,28 @@ class SportdumatchScreen extends StatelessWidget {
                 SizedBox(height: 32.h),
                 SizedBox(width: 310.w, child: const Divider()),
                 SizedBox(height: 73.h),
-                CustomText(
-                  text: AppConstants.laquaNews,
-                  fontName: "Margarine",
-                  fontsize: 25.h,
-                  fontWeight: FontWeight.w400,
-                  color: AppColors.whiteLight,
+   //======================================================> ResultAert Section <===========================================================
+                TextButton(
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (BuildContext context) => const AlertDialog(
+                          shape: Border(),
+                          content: Padding(
+                            padding: EdgeInsets.all(2),
+                            child: ResultAert(),
+                          ),
+                        ));
+                  },
+                  child: CustomText(
+                    text: AppConstants.laquaNews,
+                    fontName: "Margarine",
+                    fontsize: 25.h,
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.whiteLight,
+                  ),
                 ),
+  //==========================================================================================================
                 SizedBox(height: 17.h),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
