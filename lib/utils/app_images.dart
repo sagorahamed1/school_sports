@@ -75,6 +75,7 @@ class AppImages{
   static const String volleyball_screen_bgImage = "$path/volleyball_screen_bgImage.png";
   static const String LesSportofs_screen_bgImage = "$path/LesSportofs_screen_bgImage.png";
   static const String nosEventsScreen_bgImage = "$path/nosEventsScreen_bgImage.png";
+  static const String laJourneSportive_screen_bgImage = "$path/laJournéeSportive_screen_bgImage.png";
 
 
 

@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:school_sports/locale_string.dart';
 import 'package:school_sports/themes/themes.dart';
+import 'package:school_sports/views/screens/la_journ%C3%A9e_sportive/la_journ%C3%A9e_sportive_screen.dart';
 import 'package:school_sports/views/screens/NosSports/nos_sports_screen.dart';
 import 'package:school_sports/views/screens/les_shark_lantides/les_shark_lantides.dart';
 import 'package:school_sports/views/screens/splashScreen/splash_screen.dart';
@@ -33,10 +34,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'School Sports',
         theme: Themes().lightTheme,
-
-        home: LesSportofsScren(),
-
-
+        home: LaJourneeSportiveScreen(),
       ),
     );
   }

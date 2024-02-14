@@ -40,7 +40,7 @@ class CustomText extends StatelessWidget {
         maxLines: maxline,
         overflow: TextOverflow.ellipsis,
         style: TextStyle(
-          fontSize: fontsize.sp,
+          fontSize: fontsize.h,
           fontFamily: "$fontName",
           fontWeight: fontWeight,
           color: color,
