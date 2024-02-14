@@ -104,7 +104,7 @@ class LesSportofsScren extends StatelessWidget {
 
 
                   Container(
-                    height: 600,
+                    height: 500.h,
                     child: GridView.builder(
                       itemCount: matchList.length,
                       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -125,28 +125,23 @@ class LesSportofsScren extends StatelessWidget {
 
                   SizedBox(height: 40.h,),
 
-                  GestureDetector(
-                    onTap: (){
-                      Get.to(NosEventsScreen());
-                    },
-                    child: Container(
-                      width: width,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(6.r),
-                      color: AppColors.whiteFont_BE8),
-                      child: const CustomText(
-                        fontName: "Puritan",
-                        text: "Voir plus (Lien fb de l’album)",
-                        top: 19,
-                        bottom: 19,
-                        color: AppColors.black,
-                      ),
+                  Container(
+                    width: width,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(6.r),
+                    color: AppColors.whiteFont_BE8),
+                    child: const CustomText(
+                      fontName: "Puritan",
+                      text: "Voir plus (Lien fb de l’album)",
+                      top: 19,
+                      bottom: 19,
+                      color: AppColors.black,
                     ),
                   ),
 
 
 
-                  const SizedBox(height: 59,),
+                   SizedBox(height: 59.h,),
                 ],
               ),
             ),
