@@ -200,7 +200,6 @@ class HandballMScreen extends StatelessWidget {
                   ),
 
 
-                   SizedBox(height: 17.h,),
                 ],
               ),
             ),

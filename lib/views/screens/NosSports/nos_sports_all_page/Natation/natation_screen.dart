@@ -80,7 +80,7 @@ class NatationScreen extends StatelessWidget {
                     ),
                   ),
 
-                   SizedBox(height: 49.h,),
+                   SizedBox(height: 30.h,),
 
 
                   ///--------------------------long text----------------------------->
@@ -95,7 +95,7 @@ class NatationScreen extends StatelessWidget {
                   ),
 
 
-                  SizedBox(height: 74.h,),
+                  SizedBox(height: 50.h,),
                   ///----------------------------Respo text----------------------------->
                   Align(
                     alignment: Alignment.centerLeft,
@@ -201,7 +201,7 @@ class NatationScreen extends StatelessWidget {
                     ],
                   ),
 
-                   SizedBox(height: 17.h,),
+
                 ],
               ),
             ),

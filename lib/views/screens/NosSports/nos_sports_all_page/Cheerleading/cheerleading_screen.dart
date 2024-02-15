@@ -80,7 +80,7 @@ class CheerleadingScreen extends StatelessWidget {
                   ),
 
 
-                   SizedBox(height: 30.h,),
+                   SizedBox(height: 20.h,),
 
 
                   ///--------------------------long the Cheerleading Text----------------------------->
@@ -95,7 +95,7 @@ class CheerleadingScreen extends StatelessWidget {
                   ),
 
 
-                   SizedBox(height: 15.h,),
+                   SizedBox(height: 12.h,),
 
                   ///----------------------------pespo text----------------------------->
                   Align(

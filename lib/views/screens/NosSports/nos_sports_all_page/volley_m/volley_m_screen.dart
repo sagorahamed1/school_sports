@@ -95,7 +95,7 @@ class VolleyMScreen extends StatelessWidget {
                     top: 20.h,
                     maxline: 20,
                     text: "lequipeSportiveDeVolleyFeminieMM".tr,
-                    fontName: "Margarine",
+                    fontName: "Puritan",
                     fontsize: 15.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
@@ -252,9 +252,6 @@ class VolleyMScreen extends StatelessWidget {
                     ],
                   ),
 
-                   SizedBox(
-                    height: 10.h,
-                  ),
                 ],
               ),
             ),

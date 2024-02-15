@@ -207,7 +207,6 @@ class FitnessScreen extends StatelessWidget {
 
 
 
-                   SizedBox(height: 17.h,),
 
                 ],
               ),

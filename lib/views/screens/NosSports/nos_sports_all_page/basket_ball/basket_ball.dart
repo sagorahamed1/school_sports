@@ -89,7 +89,7 @@ class BasketBallScreen extends StatelessWidget {
                     maxline: 20,
                     text: "logText".tr,
                     fontName: "Puritan",
-                    fontsize: 16.h,
+                    fontsize: 14.h,
                     fontWeight: FontWeight.w700,
                     color: AppColors.whiteFont,
                   ),
