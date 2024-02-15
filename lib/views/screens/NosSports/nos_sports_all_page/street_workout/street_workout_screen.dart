@@ -196,7 +196,7 @@ class StreetWorkOutScreen extends StatelessWidget {
                     ],
                   ),
 
-                   SizedBox(height: 17.h,),
+
                 ],
               ),
             ),

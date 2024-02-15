@@ -48,20 +48,24 @@ class CustomShadowText extends StatelessWidget {
             color: color,
             shadows: const [
               Shadow( // bottomLeft
-                  offset: Offset(-1.5, -1.5),
-                  color: Color(0xFF584123)
+                  offset: Offset(-1, -1),
+                  // color: Color(0xFF584123)
+                  color: Colors.black
               ),
               Shadow( // bottomRight
-                  offset: Offset(1.50, -1.5),
-                  color: Color(0xFF584123)
+                  offset: Offset(1, -1),
+                  // color: Color(0xFF584123)
+                  color: Colors.black
               ),
               Shadow( // topRight
-                  offset: Offset(1.5, 1.5),
-                  color: Color(0xFF584123)
+                  offset: Offset(1, 1),
+                  // color: Color(0xFF584123)
+                  color: Colors.black
               ),
               Shadow( // topLeft
-                  offset: Offset(-1.5, 1.5),
-                  color: Color(0xFF584123)
+                  offset: Offset(-1, 1),
+                  // color: Color(0xFF584123)
+                  color: Colors.black
               ),
             ]
         ),

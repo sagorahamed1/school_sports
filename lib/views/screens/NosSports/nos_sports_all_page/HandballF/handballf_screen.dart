@@ -196,7 +196,6 @@ class HandballFScreen extends StatelessWidget {
                     ],
                   ),
 
-                   SizedBox(height: 17.h,),
                 ],
               ),
             ),

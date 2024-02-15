@@ -4,7 +4,8 @@ import 'package:get/get.dart';
 import 'package:school_sports/locale_string.dart';
 import 'package:school_sports/routes/routes.dart';
 import 'package:school_sports/themes/themes.dart';
-import 'views/screens/languesScreen/langues_screen.dart';
+import 'package:school_sports/views/screens/splashScreen/splash_screen.dart';
+
 
 
 void main() {
@@ -20,14 +21,14 @@ class MyApp extends StatelessWidget {
       designSize: const Size(373, 812),
       builder: (context, child) => GetMaterialApp(
         translations: LocaleString(),
-        locale: const Locale("fn","FN"),
-        // locale: const Locale("en","US"),
+        // locale: const Locale("fn","FN"),
+         locale: const Locale("en","US"),
         debugShowCheckedModeBanner: false,
         title: 'School Sports',
         theme: Themes().lightTheme,
-        initialRoute: AppRoutes.languesScreen,
+        initialRoute: AppRoutes.splashScreen,
         getPages: AppRoutes.routes,
-        home: LanguesScreen(),
+        home: SplashScreen(),
       ),
     );
   }

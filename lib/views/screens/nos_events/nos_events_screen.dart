@@ -107,7 +107,7 @@ class NosEventsScreen extends StatelessWidget {
                     decoration:  BoxDecoration(
                       borderRadius: BorderRadius.circular(45.r),
                       color: AppColors.black.withOpacity(0.5),
-                      border: Border.all(color: Colors.black)
+                      border: Border.all(color: Colors.black,width: 3)
                     ),
 
                     child: Center(

@@ -104,8 +104,9 @@ class LesSportofsScren extends StatelessWidget {
 
 
                   Container(
-                    height: 500.h,
+                    height: 560.h,
                     child: GridView.builder(
+                      physics: const NeverScrollableScrollPhysics(),
                       itemCount: matchList.length,
                       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 3,
@@ -123,7 +124,7 @@ class LesSportofsScren extends StatelessWidget {
                   ),
 
 
-                  SizedBox(height: 40.h,),
+                  SizedBox(height: 10.h,),
 
                   Container(
                     width: width,

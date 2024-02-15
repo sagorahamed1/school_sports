@@ -195,7 +195,7 @@ class DanseScreen extends StatelessWidget {
                     ],
                   ),
 
-                   SizedBox(height: 17.h,),
+
 
                 ],
               ),

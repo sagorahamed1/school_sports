@@ -1,5 +1,9 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:school_sports/routes/routes.dart';
 import '../../../utils/app_images.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -10,6 +14,17 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+
+  void initState() {
+    super.initState();
+    _navigateToHome();
+  }
+
+  void _navigateToHome() {
+    Timer(Duration(seconds: 5), () {
+     Get.toNamed(AppRoutes.languesScreen);
+    });
+  }
 
 
   @override
