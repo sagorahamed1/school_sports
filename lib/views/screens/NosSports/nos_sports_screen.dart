@@ -65,7 +65,7 @@ class NosSportsScreen extends StatelessWidget {
                 Obx(() => Padding(
                   padding: EdgeInsets.symmetric(horizontal: 37.w),
                   child: Container(
-                    height: 1400.h,
+                    height: 1440.h,
                     child: GridView.builder(
                       physics: const NeverScrollableScrollPhysics(),
                       itemCount: controller.nosSportsList.length,
