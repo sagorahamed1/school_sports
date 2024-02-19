@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import '../../../routes/routes.dart';
@@ -40,10 +41,15 @@ class LanguesScreen extends StatelessWidget {
                       AppImages.francaisFlage,
                     ),
                   ),
-                  Image.asset(
-                    width: 109.h,
-                    height: 74.h,
-                    AppImages.englishFlage,
+                  GestureDetector(
+                    onTap: (){
+                      Get.toNamed(AppRoutes.logInScreen);
+                    },
+                    child: Image.asset(
+                      width: 109.h,
+                      height: 74.h,
+                      AppImages.englishFlage,
+                    ),
                   ),
                 ],
               ),
